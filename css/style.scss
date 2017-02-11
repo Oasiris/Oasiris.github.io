@@ -1,0 +1,103 @@
+
+  /* Base Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* NOTE
+  html is set to 62.5% so that all the REM measurements
+  are based on 10px sizing. So basically 1.5rem = 15px :) */
+  html {
+    font-size: 62.5%; 
+  }
+
+  body {
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.5;
+    font-weight: 300;
+    color: #222; 
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smoothing: unset;
+  }
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/****************************************************/
+/* MIXINS ------------------------------------------*/
+/****************************************************/
+
+@mixin wideListElements($numOfElements) {
+  text-align: center;
+  display: inline-block;
+  width: (100% / $numOfElements);
+  box-sizing: border-box;
+  padding: 0 0;
+  margin: 0 0;
+  // background-color: yellow;
+}
+
+
+@mixin backgroundImage($imageUrl) {
+  background-image: url($imageUrl);
+  background-size: cover;
+  background-position: center top;
+}
+
+/****************************************************/
+/* VARIABLES ---------------------------------------*/
+/****************************************************/
+
+// --
+
+/****************************************************/
+/* NESTED SASS -------------------------------------*/
+/****************************************************/
+
+header {
+  color: white;
+  height: 45rem;
+  background-color: #456;
+  @include backgroundImage("./../img/bg-rocky-grey1.jpg");
+  display: block;
+
+  #name-and-desc {
+    margin-top: 5%;
+    margin-left: 5.0rem;
+    width: 40%;
+    float: left;
+
+    h1 {
+      font-size: 2.3rem;
+      display: block;
+      padding: 0;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  #nav {
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+
+    ul {
+      float: right;
+    }
+
+    ul li {
+      font-size: 1.75rem;
+      padding: 0 2.5rem;
+      display: inline-block;
+    }
+  }
+}
+
+.social-media-row {
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+
+  ul li {
+    background-color: #eee;
+    @include wideListElements(6);
+  }
+}

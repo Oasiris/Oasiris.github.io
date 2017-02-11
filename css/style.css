@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* Base Styles
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+/* NOTE
+html is set to 62.5% so that all the REM measurements
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 300;
+  color: #222;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smoothing: unset; }
+
+/* ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
+/****************************************************/
+/* MIXINS ------------------------------------------*/
+/****************************************************/
+/****************************************************/
+/* VARIABLES ---------------------------------------*/
+/****************************************************/
+/****************************************************/
+/* NESTED SASS -------------------------------------*/
+/****************************************************/
+header {
+  color: white;
+  height: 45rem;
+  background-color: #456;
+  background-image: url("./../img/bg-rocky-grey1.jpg");
+  background-size: cover;
+  background-position: center top;
+  display: block; }
+  header #name-and-desc {
+    margin-top: 5%;
+    margin-left: 5.0rem;
+    width: 40%;
+    float: left; }
+    header #name-and-desc h1 {
+      font-size: 2.3rem;
+      display: block;
+      padding: 0; }
+    header #name-and-desc h2 {
+      font-size: 1.8rem; }
+  header #nav {
+    margin-right: 5%;
+    width: 40%;
+    float: right; }
+    header #nav ul {
+      float: right; }
+    header #nav ul li {
+      font-size: 1.75rem;
+      padding: 0 2.5rem;
+      display: inline-block; }
+
+.social-media-row {
+  display: block;
+  width: 900px;
+  margin: 0 auto; }
+  .social-media-row ul li {
+    background-color: #eee;
+    text-align: center;
+    display: inline-block;
+    width: 16.66667%;
+    box-sizing: border-box;
+    padding: 0 0;
+    margin: 0 0; }
+
+/*# sourceMappingURL=style.css.map */
