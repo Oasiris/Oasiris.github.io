@@ -128,7 +128,8 @@ hr {
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
+    line-height: 1.55;
   }
 }
 
@@ -136,6 +137,23 @@ hr {
   font-size: 2.1rem;
 }
 
+.bold {
+  font-weight: 600;
+  color: $darkSeaGreen;
+}
+
+br {
+  display: block;
+  margin: 10px 0;
+}
+
+.hover-color {
+  @include CBTransition('color 0.5s');
+}
+
+.hover-color:hover {
+  color: $seaGreen;
+}
 
 /****************************************************/
 /* NESTED SASS -------------------------------------*/

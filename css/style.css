@@ -83,10 +83,28 @@ hr {
     line-height: 1;
     margin: 2.0rem 0; }
   .content-slide p {
-    font-size: 1.6rem; }
+    font-size: 1.65rem;
+    line-height: 1.55; }
 
 .row {
   font-size: 2.1rem; }
+
+.bold {
+  font-weight: 600;
+  color: rgba(30, 86, 61, 0.925); }
+
+br {
+  display: block;
+  margin: 10px 0; }
+
+.hover-color {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s; }
+
+.hover-color:hover {
+  color: rgba(69, 194, 139, 0.925); }
 
 /****************************************************/
 /* NESTED SASS -------------------------------------*/
