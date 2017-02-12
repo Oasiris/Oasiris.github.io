@@ -47,48 +47,94 @@
 
 // --
 
+
+/****************************************************/
+/* GLOBAL STYLING ----------------------------------*/
+/****************************************************/
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
 /****************************************************/
 /* NESTED SASS -------------------------------------*/
 /****************************************************/
 
 header {
   color: white;
-  height: 45rem;
+  height: 30rem;
   background-color: #456;
   @include backgroundImage("./../img/bg-rocky-grey1.jpg");
   display: block;
 
-  #name-and-desc {
-    margin-top: 5%;
-    margin-left: 5.0rem;
-    width: 40%;
-    float: left;
+  .container {
+    max-width: 95.0rem;
+    height: 100%;
 
-    h1 {
-      font-size: 2.3rem;
-      display: block;
-      padding: 0;
+    #name-and-desc {
+      margin-top: 2.5rem;
+      margin-left: 5%;
+      width: 40%;
+      float: left;
+
+      h1 {
+        font-size: 6.5rem;
+        font-weight: 200;
+        display: block;
+        padding: 0 0 1rem 0;
+        margin: 0 0;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 0 0;
+      }
     }
-    h2 {
-      font-size: 1.8rem;
-    }
-  }
 
-  #nav {
-    margin-right: 5%;
-    width: 40%;
-    float: right;
-
-    ul {
+    #nav {
+      margin-top: 3.75rem;
+      margin-right: 5%;
+      width: 50%;
       float: right;
-    }
 
-    ul li {
-      font-size: 1.75rem;
-      padding: 0 2.5rem;
-      display: inline-block;
+      ul {
+        margin: 0 0;
+        float: right;
+      }
+
+      ul li {
+        font-size: 1.90rem;
+        display: inline-block;
+        box-sizing: border-box;
+
+        a {
+          line-height: 2.0;
+          padding: 1.0rem 2.25rem;
+          color: white;
+        }
+
+        a:hover {
+          color: black;
+          background-color: white;
+          cursor: pointer;
+        }
+
+        a:active {
+          color: white;
+          background-color: #555;
+          cursor: pointer;
+        }
+      }
     }
   }
+
+  
 }
 
 .social-media-row {
