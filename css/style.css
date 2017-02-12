@@ -12,7 +12,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
   font-weight: 300;
-  color: #222;
+  color: #444;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: unset;
   font-smoothing: unset; }
@@ -42,58 +42,96 @@ body {
   /* Non-prefixed version, currently
      supported by Chrome and Opera */ }
 
+.container {
+  max-width: 95.0rem; }
+
+.content-slide h1 {
+  color: rgba(0, 150, 185, 0.925);
+  font-size: 4.8rem;
+  font-weight: 300;
+  padding: 3.0rem 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc; }
+
+.row {
+  font-size: 2.1rem; }
+
 /****************************************************/
 /* NESTED SASS -------------------------------------*/
 /****************************************************/
 header {
   color: white;
-  height: 30rem;
+  height: 17.5rem;
   background-color: #456;
-  background-image: url("./../img/bg-rocky-grey1.jpg");
+  background-image: url("./../img/star-banner.jpg");
   background-size: cover;
-  background-position: center top;
-  display: block; }
-  header .container {
-    max-width: 95.0rem;
-    height: 100%; }
-    header .container #name-and-desc {
-      margin-top: 2.5rem;
-      margin-left: 5%;
-      width: 40%;
-      float: left; }
-      header .container #name-and-desc h1 {
-        font-size: 6.5rem;
-        font-weight: 200;
-        display: block;
-        padding: 0 0 1rem 0;
-        margin: 0 0; }
-      header .container #name-and-desc h2 {
-        font-size: 1.5rem;
-        margin: 0 0; }
-    header .container #nav {
-      margin-top: 3.75rem;
-      margin-right: 5%;
-      width: 50%;
+  background-position: center center;
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 0.7rem solid #0a415a; }
+  header #header-overlay {
+    z-index: 1;
+    height: 16.8rem;
+    position: relative;
+    background-color: rgba(0, 200, 255, 0.45); }
+  header .container #name-and-desc {
+    font-family: 'Nunito', 'Raleway', 'Roboto', sans-serif;
+    margin: 3.0rem 0 0 0;
+    width: 45%;
+    float: left; }
+    header .container #name-and-desc h1 {
+      color: rgba(255, 255, 255, 0.925);
+      line-height: 0.9;
+      font-size: 6.3rem;
+      font-weight: 200;
+      letter-spacing: -0.15rem;
+      display: block;
+      padding: 0 0 1rem 0;
+      margin: 0.5rem 0 0.3rem 0; }
+    header .container #name-and-desc h2 {
+      line-height: 0.9;
+      color: rgba(255, 255, 255, 0.925);
+      font-weight: 300;
+      font-size: 2.10rem;
+      margin: 0 0; }
+  header .container #nav {
+    margin-top: 3.75rem;
+    width: 55%;
+    float: right; }
+    header .container #nav ul {
+      margin: 0 0;
       float: right; }
-      header .container #nav ul {
-        margin: 0 0;
-        float: right; }
-      header .container #nav ul li {
-        font-size: 1.90rem;
-        display: inline-block;
-        box-sizing: border-box; }
-        header .container #nav ul li a {
-          line-height: 2.0;
-          padding: 1.0rem 2.25rem;
-          color: white; }
-        header .container #nav ul li a:hover {
-          color: black;
-          background-color: white;
-          cursor: pointer; }
-        header .container #nav ul li a:active {
-          color: white;
-          background-color: #555;
-          cursor: pointer; }
+    header .container #nav ul li {
+      font-size: 1.90rem;
+      display: inline-block;
+      box-sizing: border-box; }
+      header .container #nav ul li a {
+        line-height: 2.0;
+        padding: 1.0rem 2.15rem;
+        color: rgba(255, 255, 255, 0.925);
+        transition: background-color 0.225s, color 0.225s;
+        -webkit-transition: background-color 0.225s, color 0.225s;
+        -moz-transition: background-color 0.225s, color 0.225s;
+        -o-transition: background-color 0.225s, color 0.225s; }
+      header .container #nav ul li a:hover {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.925);
+        cursor: pointer; }
+      header .container #nav ul li a:active {
+        color: white;
+        background-color: #004669;
+        cursor: pointer; }
+
+.row-date {
+  font-weight: 600;
+  color: #ccc;
+  text-align: right; }
+
+.small-link {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #aaa; }
 
 .social-media-row {
   display: block;
