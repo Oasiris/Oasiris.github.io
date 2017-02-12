@@ -58,12 +58,25 @@
 // --
 $cWhite: rgba(255,255,255,0.925);
 
-$primaryAccent: rgba(0,150,185,0.925);
+// $primaryAccent: rgba(0,150,185,0.925);
+$primaryAccent: rgba(34,163,159,0.925);
 
+
+
+$lightPrimaryAccent: rgba(34,163,159,0.45);
+$lightGrey: #dde;
 
 /****************************************************/
 /* GLOBAL STYLING ----------------------------------*/
 /****************************************************/
+
+hr {
+  opacity: 0.2;
+  margin: 4.0rem 0;
+  color: white;
+  border-bottom: 0.5px solid $lightPrimaryAccent; 
+  // border-top: 0.5px solid $lightGrey;
+}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -76,18 +89,30 @@ $primaryAccent: rgba(0,150,185,0.925);
 }
 
 .container {
-  max-width: 95.0rem;
+  // max-width: 92.0rem;
+  max-width: 85.0rem;
 }
 
 
 .content-slide {
+  padding: 4.0rem 0;
   h1 {
     color: $primaryAccent;
     font-size: 4.8rem;
     font-weight: 300;
-    padding: 3.0rem 0;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+  }
+  h3 {
+    color: $primaryAccent;
+    font-weight: 300;
+    font-size: 2.85rem;
+    line-height: 1;
+    margin: 2.0rem 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
   }
 }
 
@@ -100,6 +125,12 @@ $primaryAccent: rgba(0,150,185,0.925);
 /* NESTED SASS -------------------------------------*/
 /****************************************************/
 
+#profile-image {
+  border-radius: 9999px;
+  width: calc(100% - 1.4rem);
+  border: 0.7rem solid $lightPrimaryAccent;
+}
+
 header {
   color: white;
   height: 17.5rem;
@@ -108,13 +139,14 @@ header {
   // @include backgroundImage("../img/beautiful-comet.gif");
   display: block;
   box-sizing: border-box;
-  border-bottom: 0.7rem solid rgb(10,65,90);
+  border-bottom: 0.7rem solid rgb(25,95,90);
 
   #header-overlay {
     z-index: 1;
     height: 16.8rem;
     position: relative;
-    background-color: rgba(0,200,255,0.45);
+    // background-color: rgba(0,200,255,0.45);
+    background-color: rgba(55,245,240,0.425);
   }
 
   .container {
@@ -124,7 +156,7 @@ header {
     #name-and-desc {
       font-family: 'Nunito', 'Raleway', 'Roboto', sans-serif;
       margin: 3.0rem 0 0 0;
-      width: 45%;
+      width: 44.5%;
       float: left;
 
       h1 {
@@ -151,7 +183,7 @@ header {
 
     #nav {
       margin-top: 3.75rem;
-      width: 55%;
+      width: 55.5%;
       float: right;
 
       ul {
@@ -160,13 +192,13 @@ header {
       }
 
       ul li {
-        font-size: 1.90rem;
+        font-size: 1.85rem;
         display: inline-block;
         box-sizing: border-box;
 
         a {
           line-height: 2.0;
-          padding: 1.0rem 2.15rem;
+          padding: 1.0rem 1.65rem;
           color: $cWhite;
           @include CBTransition('background-color 0.225s, color 0.225s');
         }
