@@ -1,24 +1,46 @@
+/****************************************************/
+/* VARIABLES ---------------------------------------*/
+/****************************************************/
 
-  /* Base Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  /* NOTE
-  html is set to 62.5% so that all the REM measurements
-  are based on 10px sizing. So basically 1.5rem = 15px :) */
-  html {
-    font-size: 62.5%; 
-  }
+// --
+$cWhite: rgba(255,255,255,0.925);
 
-  body {
-    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.5;
-    font-weight: 300;
-    color: #444; 
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: unset;
-    font-smoothing: unset;
-  }
+// $primaryAccent: rgba(0,150,185,0.925);
+$pascalCyan: rgba(34,163,159,0.925);
+$lightPascalCyan: rgba(34,163,159,0.45);
 
-  /* ––––––––––––––––––––––––––––––––––––––––––––––– */
+$seaGreen: rgba(69,194,139,0.925);
+$lightSeaGreen: rgba(69,194,139,0.45);
+$darkSeaGreen: rgba(30,86,61,0.925);
+
+$lightGrey: #dde;
+
+/****************************************************/
+/* Base Styles -------------------------------------*/
+/****************************************************/
+/* NOTE
+html is set to 62.5% so that all the REM measurements
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 300;
+  color: #444; 
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smoothing: unset;
+  cursor: default;
+}
+
+::selection {
+  background: $seaGreen;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /****************************************************/
 /* MIXINS ------------------------------------------*/
@@ -51,20 +73,16 @@
   -o-transition: unquote($input);
 }
 
-/****************************************************/
-/* VARIABLES ---------------------------------------*/
-/****************************************************/
+@mixin noSelect() {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ 
+}
 
-// --
-$cWhite: rgba(255,255,255,0.925);
-
-// $primaryAccent: rgba(0,150,185,0.925);
-$primaryAccent: rgba(34,163,159,0.925);
-
-
-
-$lightPrimaryAccent: rgba(34,163,159,0.45);
-$lightGrey: #dde;
 
 /****************************************************/
 /* GLOBAL STYLING ----------------------------------*/
@@ -74,37 +92,36 @@ hr {
   opacity: 0.2;
   margin: 4.0rem 0;
   color: white;
-  border-bottom: 0.5px solid $lightPrimaryAccent; 
+  border-bottom: 0.5px solid $lightSeaGreen; 
   // border-top: 0.5px solid $lightGrey;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  @include noSelect();
 }
 
 .container {
   // max-width: 92.0rem;
-  max-width: 85.0rem;
+  max-width: 90.0rem;
 }
 
 
 .content-slide {
   padding: 4.0rem 0;
-  h1 {
-    color: $primaryAccent;
-    font-size: 4.8rem;
+  font-weight: 300;
+
+  h1, h2, h3 {
+    @include noSelect;
+    color: $seaGreen;
     font-weight: 300;
+  }
+
+  h1 {
+    font-size: 4.8rem;
     text-align: center;
   }
+
   h3 {
-    color: $primaryAccent;
-    font-weight: 300;
     font-size: 2.85rem;
     line-height: 1;
     margin: 2.0rem 0;
@@ -112,7 +129,6 @@ hr {
 
   p {
     font-size: 1.6rem;
-    font-weight: 300;
   }
 }
 
@@ -126,9 +142,10 @@ hr {
 /****************************************************/
 
 #profile-image {
+  text-align: center;
   border-radius: 9999px;
-  width: calc(100% - 1.4rem);
-  border: 0.7rem solid $lightPrimaryAccent;
+  width: 100%;
+  border: 0.7rem solid $lightSeaGreen;
 }
 
 header {
@@ -139,14 +156,14 @@ header {
   // @include backgroundImage("../img/beautiful-comet.gif");
   display: block;
   box-sizing: border-box;
-  border-bottom: 0.7rem solid rgb(25,95,90);
+  border-bottom: 0.7rem solid $darkSeaGreen;
 
   #header-overlay {
     z-index: 1;
     height: 16.8rem;
     position: relative;
     // background-color: rgba(0,200,255,0.45);
-    background-color: rgba(55,245,240,0.425);
+    background-color: $lightSeaGreen;
   }
 
   .container {
