@@ -4,7 +4,8 @@
   "description": "David's personal website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "node-sass --watch static/scss -o static/css"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,9 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
   "bugs": {
     "url": "https://github.com/Oasiris/Oasiris.github.io/issues"
   },

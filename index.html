@@ -1,5 +1,5 @@
 <!-- "Hello World"  -->
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -9,6 +9,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
   <!-- FontAwesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/brands.js" integrity="sha384-G/XjSSGjG98ANkPn82CYar6ZFqo7iCeZwVZIbNWhAmvCF2l+9b5S21K4udM7TGNu"
     crossorigin="anonymous"></script>
@@ -17,7 +27,48 @@
 </head>
 <body>
 
-  <div id="intro-circle">
+  <header>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-9">
+          <h1 id="name">David Hong</h1>
+          <div class="color-palette"></div>
+          <p class="info">
+            <span class="intro-line">Welcome to the World of Pokemon!</span>
+            <br>
+            I'm David, a <span class="developer-color">developer</span>, <span class="musician-color">musician</span>, and <span class="artist-color">artist</span> from the San Francisco bay area.
+            <br>
+            I worked for three summers at <span class="wynd-color"><a href="http://hellowynd.com" target="_blank">Wynd</a></span>, where I wrote code to scrape 6,000+ air pollutant data points in 25+ countries around the world from open online databases. I also wrote the company's Node.js style guideline.
+            <br>
+            When I'm not coding, drawing, or making music, you can usually find me improvising piano or playing old-school video games.
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <div id="profile-pic">
+            <img src="img/catharenn.jpg">
+          </div>
+          <div class="stats">david // level 19 // code wizard</div>
+          <div id="github-follow-btn"></div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="contact-bar">
+        <div class="resume-btn"></div>
+        <div class="linkedin-btn"></div>
+        <div class="github-btn"></div>
+        <div class="email-txt"></div>
+      </div>
+    </div>
+    
+
+
+  </header>
+
+  <!-- <div id="intro-circle">
     <div id="intro-circle-upper-left">
       <h1>DAVID HONG</h1>
     </div>
@@ -88,9 +139,9 @@
         <div class="inner-card" id="programming-inner-card">
           <div class="inner-card-label">
             PROGRAMMING EXPERIENCE
-          </div>
+          </div> -->
           <!-- ... -->
-        </div>
+        <!-- </div>
       </div>
 
       <div class="contact" id="skills-card">
@@ -122,7 +173,7 @@
       </div>
     </div>
     
-  </div>
+  </div> -->
 
 </body>
 </html>
