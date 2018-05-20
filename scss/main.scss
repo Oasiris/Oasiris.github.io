@@ -235,7 +235,11 @@ h1#name {
     font-weight: 300;
     display: inline-block;
     position: relative;
+
     a {
+      font-size: 10px;
+      display: block;
+      height: 20px;
       padding: 2px 22.5px;
       position: relative;    
       z-index: 10;   
