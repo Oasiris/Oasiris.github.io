@@ -149,6 +149,22 @@ a:hover {
 }
 
 // —————————————————————————————————————
+// Very top
+// —————————————————————————————————————
+
+#topbar {
+  content: "";
+  position: relative;
+  height: 8px;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  display: block;
+  background: url(../img/slicebar.svg) repeat-x;
+  background-size: auto 500%;
+}
+
+// —————————————————————————————————————
 // Header styling
 // —————————————————————————————————————
 
