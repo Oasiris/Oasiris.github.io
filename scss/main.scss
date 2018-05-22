@@ -102,7 +102,7 @@ a:hover {
 
 .pg-space {
   width: 100%;
-  height: 7px;
+  height: 7.5px;
 }
 
 // —————————————————————————————————————
@@ -114,7 +114,7 @@ a:hover {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 12.5px;
+  margin-bottom: 17.5px;
 }
 
 .circ-1, .circ-2, .circ-3, .circ-4, .circ-5 {
@@ -149,6 +149,22 @@ a:hover {
 }
 
 // —————————————————————————————————————
+// Very top
+// —————————————————————————————————————
+
+#topbar {
+  content: "";
+  position: relative;
+  height: 8px;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  display: block;
+  background: url(../img/slicebar.svg) repeat-x;
+  background-size: auto 500%;
+}
+
+// —————————————————————————————————————
 // Header styling
 // —————————————————————————————————————
 
@@ -179,12 +195,16 @@ h1#name {
   margin-bottom: 2.5px;
 }
 
+// Currently "Welcome to the Davidverse!"
 .intro-line {
   font-weight: 800;
   font-size: 22px;
+  text-align: center;
+  display: block;
 }
 
 
+// Profile pictures
 #profile-pic {
   margin: 0 auto;
   margin-top: 15px;
