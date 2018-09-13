@@ -2,9 +2,9 @@
 // Dependencies
 // —————————————————————————————————————
 
-@import 'colors';
-@import 'vars';
-@import 'mixins';
+@import './colors';
+@import './vars';
+@import './mixins';
 
 // Fonts
 $font-stack: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -27,7 +27,7 @@ body {
   font-weight: 400;
   font-family: $font-stack;
   color: $text-color;
-  background: $mint-lightestest;
+  background: $bkgd-2-color;
 
   min-height: 80vh;
 
@@ -178,7 +178,7 @@ header {
 header {
   padding-top: 2.0rem;
   padding-bottom: 2.0rem;
-  background: $mint-lightest;
+  background: $bkgd-1-color;
   cursor: crosshair;
 }
 

@@ -8,15 +8,20 @@ $seagreen-bright: #71FFD4;
 
 
 
+// $bkgd-1-color: $mint-lightest;
+$bkgd-1-color: #fff;
+// $bkgd-2-color: $mint-lightestest;
+$bkgd-2-color: #eef;
+
 // Colors: Tags
-$developer-color: #A48411;
-$musician-color: #08A3CB;
-$artist-color: #4DD1A9;
+$developer-color: rgb(153, 103, 10);
+$musician-color: rgb(66, 8, 203);
+$artist-color: rgb(24, 184, 176);
 $wynd-color: #4BC7C9;
 
 // Selection/text highlight
 // $selection-color: $seagreen-bright;
-$mild-selection-color: $seagreen-bright;
+$mild-selection-color: $seagreen-bright; 
 $selection-color: #4DD1A9;
 
 $resume-link-color: #32876D;
