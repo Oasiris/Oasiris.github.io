@@ -1,0 +1,154 @@
+// —————————————————————————————————————
+// Dependencies
+// —————————————————————————————————————
+
+// None
+
+// —————————————————————————————————————
+// Variables
+// —————————————————————————————————————
+
+// Named colors
+$softest-pink: rgb(255, 246, 246);
+$grey: rgb(116, 116, 116);
+
+$seagreen-bright: #71FFD4;
+$seagreen-2: rgb(11, 204, 178);
+
+$lightest-green-white: rgb(230, 255, 247);
+
+
+// UI Palette
+$bkgd-color: $seagreen-2;
+
+$panel-bkgd-color: $softest-pink;
+$panel-bkgd-color: $lightest-green-white;
+
+$button-color: $grey;
+$button-bkgd-color: $softest-pink;
+$button-hover-color: #444;
+$button-bkgd-hover-color: #ffeed9;
+$button-selected-color: #fff;
+$button-bkgd-selected-color: #222;
+
+// —————————————————————————————————————
+// Variables
+// —————————————————————————————————————
+
+$carousel-width: 600px;
+$carousel-height: 400px;
+
+$panel-padding: 48px;
+
+$nav-button-left-margin: 24px;
+
+// —————————————————————————————————————
+// Main
+// —————————————————————————————————————
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: $bkgd-color;
+}
+
+#container {
+  display: flex; // Positioning
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#carousel, #navigation {
+  flex: initial;
+  display: block;
+}
+
+#carousel {
+  overflow: hidden;
+  width: $carousel-width;
+  height: $carousel-height;
+  border-radius: 4px;
+  background-color: $panel-bkgd-color;
+}
+
+.p-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out; // For smooth sliding effect
+}
+
+/* Moving/transforming the p-wrapper upwards to that each panel slides into view upon click */
+
+// Move the .p-wrapper, but not the carousel itself (which is the "window frame").
+#button_a:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+
+#button_b:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); 
+}
+
+#button_c:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%); 
+}
+
+#button_d:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%); 
+}
+
+/* Styling the panels */
+
+[class^="panel_"] {
+    overflow: auto; // Enables the auto scrollbar for each panel.
+    position: relative;
+    width: inherit; // Inherits w/h of .p-wrapper div.
+    height: inherit;
+    padding: $panel-padding;
+}
+
+/* Navigation buttons */
+
+#navigation {
+  margin-left: $nav-button-left-margin;
+}
+
+[class^="label_"] {
+  display: block;
+  margin: 8px 0;
+  width: 32px;
+  height: 32px;
+  line-height: 32px; // Genius
+  text-align: center;
+  border-radius: 2px;
+  color: $button-color;
+  background-color: $button-bkgd-color;
+  cursor: pointer;
+
+  transition: all 0.3s ease; // For hover effects
+}
+
+[class^="label_"]:hover {
+  color: $button-hover-color;
+  background-color: $button-bkgd-hover-color;
+}
+
+/* Change the color of the input we've most recently selected */
+
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c,
+#button_d:checked ~ #navigation .label_d {
+  cursor: default;
+  color: $button-selected-color;
+  background-color: $button-bkgd-selected-color;
+}

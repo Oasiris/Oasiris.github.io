@@ -5,15 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/carousel.css" />
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> -->
+  <!-- <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
   
-  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <!-- <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script> -->
 </head>
 <body>
-  <div id="app"></div>
-  <script type="text/babel" src="src/main.js"></script>
+  <!-- <div id="app"></div> -->
+  <!-- <script type="text/babel" src="src/main.js"></script> -->
+
+  <!-- Adapted from: https://yeolithm.com/carousel/tutorial -->
+  <div id="container">
+    <input hidden type="radio" name="carousel-control" id="button_a" checked>
+    <input hidden type="radio" name="carousel-control" id="button_b">
+    <input hidden type="radio" name="carousel-control" id="button_c">
+    <input hidden type="radio" name="carousel-control" id="button_d">
+    
+    <div id="carousel">
+      <div class="p-wrapper">
+        <section class="panel_a">
+          <h2>Panel a</h2>
+        </section>
+        <section class="panel_b">
+          <h2>Panel b</h2>
+        </section>
+        <section class="panel_c">
+          <h2>Panel c</h2>
+        </section>
+        <section class="panel_d">
+          <h2>Panel d</h2>
+        </section>
+      </div>
+    </div>
+
+    <div id="navigation">
+      <label for="button_a" class="label_a">
+        <span>a</span>
+      </label>
+      <label for="button_b" class="label_b">
+        <span>b</span>
+      </label>
+      <label for="button_c" class="label_c">
+        <span>c</span>
+      </label>
+      <label for="button_d" class="label_d">
+        <span>d</span>
+      </label>
+    </div>
+
+  </div>
+
 </body>
 </html>

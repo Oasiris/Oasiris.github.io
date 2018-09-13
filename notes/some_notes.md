@@ -23,7 +23,7 @@ When I'm not coding, drawing, or making music, you can usually find me improvisi
 ```
 Developer, designer, artist, musican, aspiring polymath.
 
-I'm David. I grew up in the Bay Area of California. I'm 19 years old and develop software, design user interfaces and websites, draw characters, and compose music.
+I'm David. I grew up in the Bay Area of California. I'm 19 years old and develop software, design user interfaces and websites, build gadgets, draw characters, and compose music.
 
 I worked for three summers at Wynd, where I taught myself JavaScript and wrote server code to scrape 6,000+ air pollutant data points in 25+ countries around the world from open online databases. Eventually, I wrote the company's Node.js style guidelines & docs galore.
 
