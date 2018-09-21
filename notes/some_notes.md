@@ -49,6 +49,9 @@ I'm interested in _interactive media_, data science, and the intersections of co
 - 30 Seconds of CSS
   - https://atomiks.github.io/30-seconds-of-css/
   - "A curated collection of useful CSS snippets you can understand in 30 seconds or less."
+- Learn CSS Layout: The Pedantic Way
+  - http://book.mixu.net/css/index.html
+  - Layouts and Flexbox
 
 ### General Design
 
