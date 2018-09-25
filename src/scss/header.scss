@@ -1,0 +1,48 @@
+// —————————————————————————————————————
+// Colors
+// —————————————————————————————————————
+
+@import 'colors';
+
+// —————————————————————————————————————
+// Content
+// —————————————————————————————————————
+
+#header {
+  background: $c-header-bar;
+  height: calc(190px - 27px);
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  flex-direction: column;
+  // margin: 0;
+
+  padding-top: 35px;
+
+  h1#main-title {
+    color: white;
+    font-size: 98px;
+    font-family: 'Montserrat';
+    letter-spacing: -0.110em;
+    margin: 0;
+    line-height: 1;
+
+    margin-bottom: -12px;
+  }
+
+  div#header-desc {
+    font-size: 32px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    letter-spacing: -0.080em;
+    
+  }
+
+  #developer-desc {
+    color: $c-developer-desc;
+  }
+
+  #designer-desc {
+    color: $c-designer-desc;
+  }
+}
