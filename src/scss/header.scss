@@ -21,28 +21,35 @@
 
   h1#main-title {
     color: white;
-    font-size: 98px;
+    font-size: 93px;
     font-family: 'Montserrat';
     letter-spacing: -0.110em;
     margin: 0;
     line-height: 1;
 
-    margin-bottom: -12px;
+    margin-bottom: -15px;
   }
 
   div#header-desc {
-    font-size: 32px;
+    font-size: 30px;
     font-family: 'Montserrat Alternates';
     font-weight: 600;
     letter-spacing: -0.080em;
     
-  }
+    flex-direction: row;
 
-  #developer-desc {
+    #header-diamond {
+      width: 17px;
+      height: 17px;
+      margin: 0 19px;
+    }
+
+    #developer-desc {
     color: $c-developer-desc;
-  }
+    }
 
-  #designer-desc {
-    color: $c-designer-desc;
+    #designer-desc {
+      color: $c-designer-desc;
+    }
   }
 }
