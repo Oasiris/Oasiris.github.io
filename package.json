@@ -1,24 +1,16 @@
 {
-  "name": "Oasiris.github.io",
-  "version": "1.0.0",
-  "description": "David's personal website.",
-  "main": "index.js",
+  "name": "clean",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "node-sass --watch scss -o css",
-    "dev-server": "http-server -c-1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oasiris/Oasiris.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.9.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Oasiris/Oasiris.github.io/issues"
-  },
-  "homepage": "https://github.com/Oasiris/Oasiris.github.io#readme"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
