@@ -17,36 +17,3 @@ html {
   // font-family: sans-serif;
   font-family: $font-stack;
 }
-
-// Background
-
-#app-outer {
-  display: block;
-  position: relative;
-  min-height: 50vh;
-}
-
-#app-outer::after {
-  content: "";
-  background: url('./../img/axiom-pattern.png');
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-
-/* Universal select and reset */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-} */

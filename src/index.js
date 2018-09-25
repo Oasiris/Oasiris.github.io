@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 
 // Styles
 import './css/index.css';
+import './css/global.css';
 
 // Other packages
 import 'normalize.css'

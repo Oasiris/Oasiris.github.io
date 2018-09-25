@@ -1,0 +1,27 @@
+// Background
+
+#app-outer {
+  display: block;
+  position: relative;
+  min-height: 50vh;
+}
+
+#app-outer::after {
+  content: "";
+  background: url('./../img/axiom-pattern.png');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+// Containers
+
+.container {
+  min-width: 400px;
+  max-width: 1125px;
+  margin: 0 auto;
+}

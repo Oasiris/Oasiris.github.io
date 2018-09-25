@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import logo from './../svg/logo.svg';
+
 import './../css/App.css';
+
+// import logo from './../svg/logo.svg';
 
 // Importing the other components
 import Header from './Header'
+import Footer from './Footer'
 
 
 
@@ -12,7 +15,10 @@ class App extends Component {
     return (
       <div id="app-outer">
         <Header />
-      
+        <div id="content">
+          Content goes here
+        </div>
+        <Footer />
       </div>
       // <div className="App">
       //   <header className="App-header">
