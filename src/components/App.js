@@ -6,6 +6,7 @@ import './../css/App.css';
 
 // Importing the other components
 import Header from './Header'
+import Content from './Content/Content'
 import Footer from './Footer'
 
 
@@ -16,7 +17,8 @@ class App extends Component {
       <div id="app-outer">
         <Header />
         <div id="content">
-          Content goes here
+          {/* Content goes here */}
+          <Content />
         </div>
         <Footer />
       </div>
