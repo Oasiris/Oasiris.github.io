@@ -9,7 +9,17 @@
     color: white;
     font-size: 93px;
     font-family: 'Montserrat';
-    letter-spacing: -0.110em;
+    -webkit-transform: scale(1, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -o-transform: scale(1, 1);
+    /* Opera */
+    transform: scale(1, 1);
+    /* W3C */
+    letter-spacing: -0.100em;
     margin: 0;
     line-height: 1;
     margin-bottom: -15px; }

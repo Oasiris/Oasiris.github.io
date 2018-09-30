@@ -1,0 +1,20 @@
+// —————————————————————————————————————
+// Mixins
+// —————————————————————————————————————
+
+
+@mixin corrective-stretch() {
+  $scale-x: 1.00;
+  $scale-y: 1.00;
+
+  // display: inline-block;
+  -webkit-transform: scale($scale-x, $scale-y); /* Safari and Chrome */
+  -moz-transform:    scale($scale-x, $scale-y); /* Firefox */
+  -ms-transform:     scale($scale-x, $scale-y); /* IE 9 */
+  -o-transform:      scale($scale-x, $scale-y); /* Opera */
+  transform:         scale($scale-x, $scale-y); /* W3C */
+}
+
+@mixin montserrat-stretch() {
+  @include corrective-stretch();
+}

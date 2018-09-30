@@ -3,6 +3,7 @@
 // —————————————————————————————————————
 
 @import 'colors';
+@import 'mixins';
 
 // —————————————————————————————————————
 // Content
@@ -23,7 +24,8 @@
     color: white;
     font-size: 93px;
     font-family: 'Montserrat';
-    letter-spacing: -0.110em;
+    @include montserrat-stretch();
+    letter-spacing: -0.100em;
     margin: 0;
     line-height: 1;
 
