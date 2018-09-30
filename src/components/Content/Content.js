@@ -10,7 +10,7 @@
 import React, { Component } from 'react';
 
 // Importing other components
-import ContentHeader     from './ContentHeader'
+import ContentHeader from './ContentHeader'
 import Border from './Border'
 import BorderLink from './BorderLink'
 import HexHeader from './HexHeader'
@@ -18,15 +18,18 @@ import SquareHeader from './SquareHeader'
 
 import Dbr from './../General/Dbr'
 
+// ——————————————————————————————
 
 export default class Content extends Component {
   render() {
     return (
-      <React.Fragment>
-        {/* <ContentSectionWork /> */}
-        <ContentSectionAbout />
-        <ContentSectionContact />
-      </React.Fragment>
+      <div id="content">
+        <div className="container">
+          {/* <ContentSectionWork /> */}
+          <ContentSectionAbout />
+          <ContentSectionContact />
+        </div>
+      </div>
     );
   }
 }
@@ -39,6 +42,8 @@ export default class Content extends Component {
 //   }
 // }
 
+// ——————————————————————————————
+
 
 const ContentSectionAbout = () => (
   <div className="section" id="about-section">
@@ -47,42 +52,11 @@ const ContentSectionAbout = () => (
     </ContentHeader>
     <div className="row">
       <div className="col-md-6">
-        <Border>
-          <HexHeader>Introduction</HexHeader>
-          Developer, designer, artist, musican, aspiring polymath.
-          <Dbr />
-          I'm David. I'm from the Bay Area, California. 
-          <br />              
-          I study at <span className="hl-brown">Brown University</span>. 
-          <br />
-          I'm 19 years old and develop software, design user interfaces and 
-          websites, build gadgets, create digital art, and compose music.
-          <Dbr />
-          I worked for three summers at <span className="hl-wynd">Wynd</span>, 
-          where I taught myself JavaScript and wrote server code to scrape 
-          6,000+ air pollutant data points in 25+ countries around the world 
-          from open online databases. 
-          <br />
-          Eventually, I wrote the company's Node.js style guidelines & docs 
-          galore.
-          <Dbr />
-          I have many passions, but I'm especially captivated by interactive 
-          media, data science, and the intersections of computer science and 
-          music.  
-          <Dbr />
-          I also play improv jazz piano and enjoy video games!
-        </Border>
+        <AboutIntroduction />
       </div>
 
       <div className="col-md-6">
-        <Border>
-          <SquareHeader>Artistic Rendition</SquareHeader>
-          <div id="profile-pic">
-          </div>
-          <div id="profile-pic-caption">
-            {"Portrait drawn by Catharine Ren".toUpperCase()}
-          </div>
-        </Border>
+        <AboutPortrait />
         <Border>
           {"David // Level 19 // Code Wizard // United States".toUpperCase()}
         </Border>
@@ -93,6 +67,48 @@ const ContentSectionAbout = () => (
     </div>
   </div>
 );
+
+// Note: Bordered
+const AboutIntroduction = () => (
+  <Border>
+    <HexHeader>Introduction</HexHeader>
+    Developer, designer, artist, musican, aspiring polymath.
+    <Dbr />
+    I'm David. I'm from the Bay Area, California. 
+    <br />              
+    I study at <span className="hl-brown">Brown University</span>. 
+    <br />
+    I'm 19 years old and develop software, design user interfaces and 
+    websites, build gadgets, create digital art, and compose music.
+    <Dbr />
+    I worked for three summers at <span className="hl-wynd">Wynd</span>, 
+    where I taught myself JavaScript and wrote server code to scrape 
+    6,000+ air pollutant data points in 25+ countries around the world 
+    from open online databases. 
+    <br />
+    Eventually, I wrote the company's Node.js style guidelines & docs 
+    galore.
+    <Dbr />
+    I have many passions, but I'm especially captivated by interactive 
+    media, data science, and the intersections of computer science and 
+    music.  
+    <Dbr />
+    I also play improv jazz piano and enjoy video games!
+  </Border>
+);
+
+const AboutPortrait = () => (
+  <Border>
+    <SquareHeader>Artistic Rendition</SquareHeader>
+    <div id="profile-pic">
+    </div>
+    <div id="profile-pic-caption">
+      {"Portrait drawn by Catharine Ren".toUpperCase()}
+    </div>
+  </Border>
+);
+
+// ——————————————————————————————
 
 const ContentSectionContact = () => (
   <div className="section" id="contact-section">

@@ -1,14 +1,15 @@
 #header {
   background: #005d56;
-  height: calc(190px - 37px);
+  height: calc(195px);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 35px; }
+  padding-top: 40px; }
   #header h1#main-title {
     color: white;
     font-size: 93px;
     font-family: 'Montserrat';
+    font-weight: 700;
     -webkit-transform: scale(1, 1);
     /* Safari and Chrome */
     -moz-transform: scale(1, 1);
@@ -28,6 +29,7 @@
     font-family: 'Montserrat Alternates';
     font-weight: 600;
     letter-spacing: -0.080em;
+    line-height: 1;
     flex-direction: row; }
     #header div#header-desc #header-diamond {
       width: 17px;

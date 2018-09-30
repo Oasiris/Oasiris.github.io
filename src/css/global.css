@@ -13,8 +13,3 @@
   right: 0;
   position: absolute;
   z-index: -1; }
-
-.container {
-  min-width: 400px;
-  max-width: 1125px;
-  margin: 0 auto; }

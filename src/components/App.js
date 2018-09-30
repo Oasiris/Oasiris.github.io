@@ -9,18 +9,15 @@ import Header from './Header'
 import Content from './Content/Content'
 import Footer from './Footer'
 
-
+// —————————————————————————
 
 class App extends Component {
   render() {
     return (
       <div id="app-outer">
-        <Header />
-        <div id="content">
-          {/* Content goes here */}
-          <Content />
-        </div>
-        <Footer />
+        <Header  />
+        <Content />
+        <Footer  />
       </div>
       // <div className="App">
       //   <header className="App-header">

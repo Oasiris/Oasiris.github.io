@@ -12,7 +12,6 @@ export default class Footer extends Component {
           <h3>Hosted on GitHub. Powered by React.</h3>
           <h4>This website's design was inspired by the interfaces of a variety of video games, including the Wipeout and Splatoon series.</h4>
         </div>
-        
       </div>
     );
   }
