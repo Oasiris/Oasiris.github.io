@@ -1,0 +1,53 @@
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+
+.title { margin-top: 0.8rem; margin-bottom: 0; }
+
+.subtitle {
+  margin-bottom: 0.6rem;
+}
+
+nav.navbar {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+
+  margin-bottom: 2.0rem;
+
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+
+  & > li { 
+    display: inline-block; 
+    cursor: pointer;
+
+    padding: 1.2rem 7.0rem;
+    padding-left: 0.2rem;
+    text-align: center;
+    margin: 0;
+
+    font-family: $rubik-font-stack;
+    font-size: 1.6rem;
+
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  // nav.navbar {
+  //   border-top: 1px solid #ddd;
+  // }
+
+  ul.nav {
+    & > li {
+      display: block;
+      padding: 1.0rem 0;
+    }
+  }
+}

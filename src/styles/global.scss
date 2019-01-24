@@ -1,0 +1,7 @@
+.unselectable {
+  user-select: none;
+
+  * {
+    user-select: none;
+  }
+}

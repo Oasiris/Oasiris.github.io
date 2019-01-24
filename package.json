@@ -1,23 +1,27 @@
 {
-  "name": "Oasiris.github.io",
-  "version": "1.0.0",
-  "description": "David's personal website.",
-  "main": "index.js",
+  "name": "oasiris.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "fast-lorem-ipsum": "^1.2.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "node-sass --watch scss -o css"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oasiris/Oasiris.github.io.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.9.0"
-  },
-  "bugs": {
-    "url": "https://github.com/Oasiris/Oasiris.github.io/issues"
-  },
-  "homepage": "https://github.com/Oasiris/Oasiris.github.io#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,0 +1,57 @@
+@import 'fonts';
+@import 'colors';
+
+// ————————————————————
+// Minimum Width
+
+body {
+  min-width: 400px;
+}
+
+// ————————————————————
+// General + Fonts
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 { font-family: $rubik-font-stack; }
+
+// ————————————————————
+// Links
+
+a {
+  text-decoration: none;
+  color: $seafoam;
+
+  &:visited {
+  }
+}
+
+// ————————————————————
+// Header details
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -.04rem;
+}
+
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.7rem;
+}
+
+// ————————————————————
+// Other
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

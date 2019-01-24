@@ -1,0 +1,15 @@
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+// .jumpLink {
+//   text-decoration: none;
+// }
+
+.jumpLink {
+  // color: none;
+  font-family: $ui-font-stack;
+  background: linear-gradient(to right, $seafoam, $seafoam2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.2rem;
+}
