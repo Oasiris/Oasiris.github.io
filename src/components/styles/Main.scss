@@ -1,6 +1,10 @@
 @import '../../styles/fonts';
 @import '../../styles/colors';
 
+// —————————————————————
+// Header
+
+section.header { cursor: default; }
 
 .title { margin-top: 1.5rem; margin-bottom: 0; }
 
@@ -12,14 +16,14 @@
 // Navbar - Main
 
 nav.navbar {
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid rgba(black, 0.12);
+  border-top: 1px solid rgba(black, 0.12);
 
   margin-bottom: 2.0rem;
 
   position: sticky;
   top: 0;
-  background: white;
+  background: $bkgd-color;
 }
 
 ul.nav {

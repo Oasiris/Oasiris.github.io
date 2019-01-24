@@ -19,3 +19,6 @@ a.superlink {
 
 .growSlighter { transition: all .075s ease-in-out; }
 .growSlighter:hover { transform: scale(1.01); }
+
+.growSlightest { transition: all .1s ease-in-out; }
+.growSlightest:hover { transform: scale(1.005); }

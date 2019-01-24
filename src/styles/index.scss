@@ -17,10 +17,31 @@ body {
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $bkgd-color;
   color: $black-text;
 }
 
 h1, h2, h3, h4, h5 { font-family: $rubik-font-stack; }
+
+// ————————————————————
+// Root
+
+#root {
+  display: block;
+  position: relative;
+}
+
+#root::after {
+  content: "";
+  background: url("../components/img/axiom-pattern.png");
+  opacity: 0.23333;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -50;
+}
 
 // ————————————————————
 // Links

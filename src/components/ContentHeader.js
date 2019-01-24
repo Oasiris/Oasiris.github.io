@@ -10,7 +10,7 @@ import './styles/Header.scss'
 // }
 
 const ContentHeader = props => (
-  <h3 id={props.id} className="hasHeaderLink growSlighter">
+  <h3 id={props.id} className="hasHeaderLink growSlightest">
     <div className="hiddenLink" id={`${props.id}_`}></div>
     <a className="jumpLink unselectable" href={`#${props.id}_`}>#</a>
     <span style={{cursor: 'default'}}>
