@@ -1,0 +1,13 @@
+div#fixed-invis-container {
+  position: fixed;
+  height: 2;
+  opacity: 0; }
+  div#fixed-invis-container #sidebar {
+    opacity: 1; }
+
+#sidebar {
+  position: fixed;
+  z-index: -1; }
+
+#sidebar {
+  color: green; }

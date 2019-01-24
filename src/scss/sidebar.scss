@@ -1,0 +1,24 @@
+// Used to set up the position of our sidebar
+
+div#fixed-invis-container {
+  position: fixed;
+  height  : 2;
+  opacity : 0;
+
+  #sidebar {
+    opacity: 1;
+  }
+}
+
+
+// Sidebar: positioning
+
+#sidebar {
+  position: fixed;
+  z-index : -1;
+}
+
+
+#sidebar {
+  color: green;
+}

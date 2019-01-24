@@ -10,7 +10,7 @@
 import React, { Component } from 'react';
 
 // Importing other components
-import ContentHeader from './ContentHeader'
+import SectionHeader from './SectionHeader'
 import Border from './Border'
 import BorderLink from './BorderLink'
 import HexHeader from './HexHeader'
@@ -47,9 +47,9 @@ export default class Content extends Component {
 
 const ContentSectionAbout = () => (
   <div className="section" id="about-section">
-    <ContentHeader desc="My essence, my mission">
+    <SectionHeader desc="My essence, my mission">
       About
-    </ContentHeader>
+    </SectionHeader>
     <div className="row">
       <div className="col-md-6">
         <AboutIntroduction />
@@ -112,9 +112,9 @@ const AboutPortrait = () => (
 
 const ContentSectionContact = () => (
   <div className="section" id="contact-section">
-    <ContentHeader desc="Social media and other ways to get in touch">
+    <SectionHeader desc="Social media and other ways to get in touch">
       Contact
-    </ContentHeader>
+    </SectionHeader>
     <div className="my-row">
       <BorderLink href=""></BorderLink>
       <BorderLink href=""></BorderLink>

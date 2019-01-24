@@ -8,6 +8,7 @@ import './../css/App.css';
 import Header from './Header'
 import Content from './Content/Content'
 import Footer from './Footer'
+import Sidebar from './Sidebar'
 
 // —————————————————————————
 
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <div id="app-outer">
+        <Sidebar />
         <Header  />
         <Content />
         <Footer  />

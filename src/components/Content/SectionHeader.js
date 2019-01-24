@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ContentHeader extends Component {
+export default class SectionHeader extends Component {
   constructor(props) {
     super(props);
   }
@@ -14,6 +14,8 @@ export default class ContentHeader extends Component {
     return (
       <React.Fragment>
         <div className="content-header-row">
+          
+
           <div className="content-header-block">
             {this.props.children}
           </div>

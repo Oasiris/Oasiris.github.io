@@ -13,5 +13,6 @@ import 'normalize.css'
 import './css/index.css';
 import './css/global.css';
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

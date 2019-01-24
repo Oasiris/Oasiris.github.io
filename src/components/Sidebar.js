@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 
+import './../css/sidebar.css'
+
 // ——————————————————————————————
 
 export default class Sidebar extends Component {
   render() {
     return (
-      <div id="sidebar">
-        <SideLogo />
-        <SideNav />
+      <div className="container" id="fixed-invis-container">
+        This is text that can't be seen.
+        <div id="sidebar">
+          <SideLogo />
+          <SideNav />
+        </div>
       </div>
     );
   }
