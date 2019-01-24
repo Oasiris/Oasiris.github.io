@@ -15,7 +15,12 @@ const Nav = () => (
       {/* Note: tabindex="0" enables 'focus' animations on Safari. */}
       <li><a tabindex="0" href='#work_' className="grow">Work</a></li>
       <li><a tabindex="0" href='#about_' className="grow">About</a></li>
-      <li><a tabindex="0" href='#resume_' className="grow">Resume</a></li>
+      <li><a tabindex="0" href='resume/resume_1col_2019.01.24.pdf' target="_blank" className="grow" id="resumeNavBtn">
+        Resume
+        <div class="resumeHoverNote unselectable">
+          Opens in a new tab.
+        </div>
+      </a></li>
       <li><a tabindex="0" href='#contact_' className="grow">Contact</a></li>
     </ul>
   </nav>
@@ -62,19 +67,20 @@ const Main = props => {
   return (
     <div>
       <div className="container">
-        <Header>The Davidverse.</Header>
-        <Nav />
+        <div className="minHeightZone">
+          <Header>The Davidverse.</Header>
+          <Nav />
 
 
-        <ContentHeader id="work">Work</ContentHeader>
-        <Work />
-        <ContentHeader id="about">About</ContentHeader>
-        <About />
-        <ContentHeader id="resume">Resume</ContentHeader>
-        <Resume />
-        <ContentHeader id="contact">Contact</ContentHeader>
-        <Contact />
-
+          <ContentHeader id="work">Work</ContentHeader>
+          <Work />
+          <ContentHeader id="about">About</ContentHeader>
+          <About />
+          {/* <ContentHeader id="resume">Resume</ContentHeader>
+          <Resume /> */}
+          <ContentHeader id="contact">Contact</ContentHeader>
+          <Contact />
+        </div>
         <Footer />
       </div>
     </div>

@@ -2,6 +2,14 @@
 @import '../../styles/colors';
 
 // —————————————————————
+// MinHeightZone
+// Used to make sure the page is at least a certain height at all times.
+
+.minHeightZone {
+  min-height: calc(100vh - 12.3rem);
+}
+
+// —————————————————————
 // Header
 
 section.header { cursor: default; }
@@ -55,7 +63,7 @@ ul.nav {
 
 ul.nav li a {
   transition: color .03s linear, background .03s linear;
-  border-radius: 2px;
+  border-radius: 1px;
 
   &:hover {
     color: #000;
@@ -72,6 +80,37 @@ ul.nav li a {
 }
 
 // —————————————————————
+// Hover Note in Navbar
+
+.resumeHoverNote {
+  display: none;
+
+  color: lighten($black-text, 5%);
+  background: $bkgd-color;
+  line-height: 1;
+  font-size: 1.3rem;
+  min-width: 14.0rem;
+  border-radius: 2px;
+  padding: 0.4rem 0.5rem;
+  border: 0.075rem solid rgba(black, 0.13);
+}
+
+
+ul.nav li a {
+  position: relative;
+
+  &#resumeNavBtn {
+    &:hover {
+      & > div.resumeHoverNote {
+        display: block;
+        position: absolute;
+        bottom: -1.5rem;
+      }
+    }
+  }
+}
+
+// —————————————————————
 // Footer
 
 section#footer {
@@ -83,7 +122,7 @@ section#footer {
     text-align: right;
     font-size: 1.45rem;
     color: rgba($black-text, 0.5);
-    letter-spacing: -.0275em;
+    letter-spacing: -.024em;
   }
 }
 
