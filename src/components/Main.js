@@ -21,11 +21,11 @@ const Nav = () => (
 )
 
 
-const Header = () => (
+const Header = (props) => (
   <section className="header">
-    <h3 className="title">David Hong.</h3>
+    <h3 className="title">{props.children}</h3>
     {/* <h5 className="subtitle">I write code and do some other wacky things.</h5> */}
-    <h6 className="subtitle">I write code, design websites, and do other wacky things.</h6>
+    <h6 className="subtitle">I'm David. I write code, design websites, and do other wacky things.</h6>
   </section>
 )
 
@@ -37,16 +37,29 @@ const Footer = () => (
   </section>
 )
 
+const About = () => (
+  <div id="aboutContent">
+    I'm David, a developer, designer, and musician from the San Francisco bay area. I study at Brown University.
+    <pbr />
+    I worked for three summers at <a className="superlink" href="https://shop.hellowynd.com/" target="_blank">Wynd</a>, where I wrote code to scrape 6,000+ air pollutant data points in 25+ countries around the world from open online databases. 
+    <br />
+    I also wrote the company's Node.js style guidelines & docs galore.
+    <pbr />
+    When I'm not coding, drawing, or making music, you can usually find me improvising piano or playing old-school video games.
+  </div>
+)
+
 const Main = props => {
   return (
     <div>
       <div className="container">
-        <Header />
+        <Header>The Davidverse.</Header>
         <Nav />
 
 
         <ContentHeader id="work">Work</ContentHeader>
         <ContentHeader id="about">About</ContentHeader>
+        <About />
         <ContentHeader id="resume">Resume</ContentHeader>
         <ContentHeader id="contact">Contact</ContentHeader>
         <p>

@@ -27,10 +27,11 @@ h1, h2, h3, h4, h5 { font-family: $rubik-font-stack; }
 
 a {
   text-decoration: none;
-  color: $seafoam;
+  color: $link-color;
+  cursor: pointer;
 
-  &:visited {
-  }
+  // &:visited {
+  // }
 }
 
 // ————————————————————
@@ -50,9 +51,14 @@ h6 {
 }
 
 // ————————————————————
-// Other
+// New Tags
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+pbr {
+  display: block;
+  margin-bottom: 1.8rem;
 }
