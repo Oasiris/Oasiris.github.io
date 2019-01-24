@@ -13,3 +13,19 @@
   -webkit-text-fill-color: transparent;
   margin-right: 0.2rem;
 }
+
+.hiddenLink {
+  position: relative;
+  // Accounts for sticky top nav bar
+  top: -5.0rem;
+}
+
+@media screen and (max-width: 650px) {
+  .hiddenLink {
+    top: -18.0rem;
+  }
+}
+
+h3.hasHeaderLink {
+  font-size: 2.9rem;
+}

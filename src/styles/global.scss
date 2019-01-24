@@ -5,3 +5,13 @@
     user-select: none;
   }
 }
+
+
+.grow { transition: all .095s ease-in-out; }
+.grow:hover { transform: scale(1.06); }
+
+.growSlight { transition: all .0825s ease-in-out; }
+.growSlight:hover { transform: scale(1.025); }
+
+.growSlighter { transition: all .075s ease-in-out; }
+.growSlighter:hover { transform: scale(1.01); }

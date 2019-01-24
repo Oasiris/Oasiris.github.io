@@ -2,11 +2,14 @@
 @import '../../styles/colors';
 
 
-.title { margin-top: 0.8rem; margin-bottom: 0; }
+.title { margin-top: 1.5rem; margin-bottom: 0; }
 
 .subtitle {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
+
+// —————————————————————
+// Navbar - Main
 
 nav.navbar {
   border-bottom: 1px solid #ddd;
@@ -23,21 +26,46 @@ ul.nav {
   list-style-type: none;
   margin: 0;
 
-  & > li { 
+
+  li { 
     display: inline-block; 
     cursor: pointer;
-
-    padding: 1.2rem 7.0rem;
-    padding-left: 0.2rem;
-    text-align: center;
     margin: 0;
+    
+    a {
+      color: $black-text;
+      display: block;
+      padding: 1.2rem 6.3rem;
+      padding-left: 0.9rem;
+      text-align: center;
 
-    font-family: $rubik-font-stack;
-    font-size: 1.6rem;
-
+      font-family: $rubik-font-stack;
+      font-size: 1.6rem;
+    }
   }
 }
 
+// —————————————————————
+// Navbar – Anim
+
+ul.nav li a {
+  transition: color .03s linear, background .03s linear;
+  &:focus {
+    color: white;
+    background: $black-text;
+  }
+}
+
+// —————————————————————
+// Responsive
+
+.other {
+  transition: all .0875s ease-in-out;
+}
+
+.other:hover {
+  color: red;
+}
 
 @media screen and (max-width: 650px) {
   // nav.navbar {
@@ -45,7 +73,7 @@ ul.nav {
   // }
 
   ul.nav {
-    & > li {
+    & li {
       display: block;
       padding: 1.0rem 0;
     }

@@ -1,0 +1,73 @@
+/**
+ * Mixins, recycled from a previous frontend project.
+ * There are mixins currently unused mothballed at the bottom of this file.
+ */
+
+// —————————————————————————————————————
+// Mixins
+
+// —————————————————————————————————————
+// Unused Mixins
+
+// @mixin corrective-stretch() {
+//   $scale-x: 1.00;
+//   $scale-y: 1.03;
+
+//   // display: inline-block;
+//   -webkit-transform: scale($scale-x, $scale-y); /* Safari and Chrome */
+//   -moz-transform:    scale($scale-x, $scale-y); /* Firefox */
+//   -ms-transform:     scale($scale-x, $scale-y); /* IE 9 */
+//   -o-transform:      scale($scale-x, $scale-y); /* Opera */
+//   transform:         scale($scale-x, $scale-y); /* W3C */
+// }
+
+// @mixin montserrat-stretch() {
+//   @include corrective-stretch();
+// }
+
+// @mixin muli-stretch() {
+//   $scale-x: 1.00;
+//   $scale-y: 1.00;
+
+//   // display: inline-block;
+//   -webkit-transform: scale($scale-x, $scale-y); /* Safari and Chrome */
+//   -moz-transform:    scale($scale-x, $scale-y); /* Firefox */
+//   -ms-transform:     scale($scale-x, $scale-y); /* IE 9 */
+//   -o-transform:      scale($scale-x, $scale-y); /* Opera */
+//   transform:         scale($scale-x, $scale-y); /* W3C */
+// }
+
+
+// @mixin no-bullets() {
+//   list-style-type: none;
+// }
+
+// @mixin card-margins() {
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
+// }
+
+// @mixin gradient-animation($gradient, $time-in-sec) {
+//   background: $gradient;
+//   background-size: 250% 250%;
+
+//   -webkit-animation: LogoLinear $time-in-sec linear infinite;
+//   -moz-animation: LogoLinear $time-in-sec linear infinite;
+//   animation: LogoLinear $time-in-sec linear infinite;
+// }
+
+// @-webkit-keyframes LogoLinear {
+//     0%{background-position:0% 50%}
+//     50%{background-position:100% 50%}
+//     100%{background-position:0% 50%}
+// }
+// @-moz-keyframes LogoLinear {
+//     0%{background-position:0% 50%}
+//     50%{background-position:100% 50%}
+//     100%{background-position:0% 50%}
+// }
+// @keyframes LogoLinear { 
+//     0%{background-position:0% 50%}
+//     50%{background-position:100% 50%}
+//     100%{background-position:0% 50%}
+// }

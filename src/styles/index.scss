@@ -17,6 +17,7 @@ body {
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $black-text;
 }
 
 h1, h2, h3, h4, h5 { font-family: $rubik-font-stack; }

@@ -4,16 +4,20 @@ import * as loremIpsum from 'fast-lorem-ipsum'
 // import logo from './img/logo.svg';
 import './styles/Main.scss';
 
-import ContentHeader from './Header'
+import ContentHeader from './ContentHeader'
 
 
 const Nav = () => (
-  <nav className="navbar unselectable">
+  <nav className="navbar">
     <ul className="nav">
-      <li><a href='#work'>Work</a></li>
-      <li>About</li>
-      <li>Resume</li>
-      <li>Contact</li>
+      {/* <a href='#work_' className="other"><li>Work</li></a>
+      <a href='#about_' className="growSlight"><li>About</li></a>
+      <a href='#resume_' className="growSlight"><li>Resume</li></a>
+      <a href='#contact_' className="growSlight"><li>Contact</li></a> */}
+      <li><a href='#work_' className="grow">Work</a></li>
+      <li><a href='#about_' className="grow">About</a></li>
+      <li><a href='#resume_' className="grow">Resume</a></li>
+      <li><a href='#contact_' className="grow">Contact</a></li>
     </ul>
   </nav>
 )
