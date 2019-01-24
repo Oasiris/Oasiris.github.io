@@ -7,17 +7,15 @@ import './styles/Main.scss';
 import ContentHeader from './ContentHeader'
 
 
+
 const Nav = () => (
   <nav className="navbar">
-    <ul className="nav">
-      {/* <a href='#work_' className="other"><li>Work</li></a>
-      <a href='#about_' className="growSlight"><li>About</li></a>
-      <a href='#resume_' className="growSlight"><li>Resume</li></a>
-      <a href='#contact_' className="growSlight"><li>Contact</li></a> */}
-      <li><a href='#work_' className="grow">Work</a></li>
-      <li><a href='#about_' className="grow">About</a></li>
-      <li><a href='#resume_' className="grow">Resume</a></li>
-      <li><a href='#contact_' className="grow">Contact</a></li>
+    <ul className="nav unselectable">
+      {/* Note: tabindex="0" enables 'focus' animations on Safari. */}
+      <li><a tabindex="0" href='#work_' className="grow">Work</a></li>
+      <li><a tabindex="0" href='#about_' className="grow">About</a></li>
+      <li><a tabindex="0" href='#resume_' className="grow">Resume</a></li>
+      <li><a tabindex="0" href='#contact_' className="grow">Contact</a></li>
     </ul>
   </nav>
 )
@@ -31,6 +29,13 @@ const Header = () => (
   </section>
 )
 
+
+const Footer = () => (
+  <section id="footer" className="unselectable">
+    <hr />
+    <h5>2019. Hosted on Github. Powered by React.</h5>
+  </section>
+)
 
 const Main = props => {
   return (
@@ -49,6 +54,8 @@ const Main = props => {
 
           {loremIpsum("1000w")}
         </p>
+
+        <Footer />
       </div>
     </div>
   )

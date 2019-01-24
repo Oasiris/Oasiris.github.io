@@ -30,6 +30,7 @@ ul.nav {
   li { 
     display: inline-block; 
     cursor: pointer;
+    padding: 0;
     margin: 0;
     
     a {
@@ -50,9 +51,35 @@ ul.nav {
 
 ul.nav li a {
   transition: color .03s linear, background .03s linear;
+  border-radius: 2px;
+
+  &:hover {
+    color: $seafoam2;
+  }
+
   &:focus {
+    outline: none;
     color: white;
-    background: $black-text;
+    // background: $black-text;
+    background: 
+      linear-gradient(135deg, rgba($seafoam, 0.9), rgba($seafoam, 0.9) 70%),
+      linear-gradient(336deg, rgba($hier-seafoam, 0.9), rgba($hier-seafoam, 0.9) 70%);
+  }
+}
+
+// —————————————————————
+// Footer
+
+section#footer {
+  margin: 3.0rem 0;
+  hr {
+    margin: 2.5rem 0;
+  }
+  h5 {
+    text-align: right;
+    font-size: 1.45rem;
+    color: rgba($black-text, 0.5);
+    letter-spacing: -.0275em;
   }
 }
 
@@ -68,14 +95,20 @@ ul.nav li a {
 }
 
 @media screen and (max-width: 650px) {
+  ul.nav li a {
+    padding: 1.2rem 4.4rem;
+    padding-left: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
   // nav.navbar {
   //   border-top: 1px solid #ddd;
   // }
 
   ul.nav {
-    & li {
+    li {
       display: block;
-      padding: 1.0rem 0;
+      a { padding: 1.0rem 0; }
     }
   }
 }
