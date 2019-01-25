@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from './styles/PageGrid.module.scss'
 
 export default class PageGrid extends Component {
   render() {
@@ -9,10 +10,12 @@ export default class PageGrid extends Component {
     
 
     return (
-      <div>
-        {/* {len} */}
-        {children.length}
-        {typeof children}
+      <div className={style.gridWrapper}>
+        <div className={style.grid}>
+          {/* {children.length} */}
+          {/* {typeof children} */}
+          {children}
+        </div>
       </div>
     )
   }

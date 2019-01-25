@@ -11,11 +11,28 @@ $seafoam: #1cd2a5;
 $seafoam1-5: #0ec89a;
 $seafoam2: #0ea781;
 
+
+// —————
+
 $bkgd-color: $white;
 
 $link-color: $seafoam1-5;
 
+$nav-bkgd: linear-gradient(to left top, rgba($seafoam, 0.9), rgba($hier-seafoam, 0.9));
 
+
+// —————
+
+// $grid-item-bkgd-col2: rgb(180, 255, 245);
+
+$grid-item-bkgd-col1: rgba(196, 255, 235, 0.85);
+$grid-item-bkgd-col2: rgba(198, 253, 255, 0.85);
+
+
+$grid-item-bkgd: linear-gradient(
+  135deg,
+  $grid-item-bkgd-col1,
+  $grid-item-bkgd-col2);
 
 // ——————————————————————————
 // Other settings

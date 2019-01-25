@@ -70,7 +70,7 @@ const Resume = () => (
 
 const Main = props => {
   return (
-    <div>
+    <>
       <div className="container">
         <div className="minHeightZone">
           <Header>The Davidverse.</Header>
@@ -86,7 +86,7 @@ const Main = props => {
         </div>
         <Footer />
       </div>
-    </div>
+    </>
   )
 }
 

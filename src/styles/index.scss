@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'colors';
+@import 'values';
 
 // ————————————————————
 // Minimum Width
@@ -42,6 +43,17 @@ h1, h2, h3, h4, h5 { font-family: $rubik-font-stack; }
   right: 0;
   position: fixed;
   z-index: -50;
+}
+
+// ————————————————————
+// Container
+
+.container {
+  max-width: 1060px;
+}
+
+@media screen and (min-width: $breakpoint-4k) {
+  .container { max-width: 1260px; }
 }
 
 // ————————————————————

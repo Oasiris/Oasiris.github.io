@@ -1,5 +1,6 @@
 @import '../../styles/fonts';
 @import '../../styles/colors';
+@import '../../styles/values';
 
 // ————————————————————————–
 
@@ -24,7 +25,7 @@ h3.hasHeaderLink {
   top: -5.0rem;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: $breakpoint-mobile) {
   .hiddenLink {
     top: 0rem;
     // top: -19.0rem;

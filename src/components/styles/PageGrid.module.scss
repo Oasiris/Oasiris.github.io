@@ -1,0 +1,105 @@
+@import '../../styles/colors';
+@import '../../styles/values';
+
+// ————————————————–
+// Test
+
+.gridWrapper {
+  // padding: 3.0rem;
+  // background: yellow;
+}
+
+.grid {
+  // padding: 2.0rem;
+  // background: aqua;
+}
+
+// ——————————————————————
+// Responsive-agnostic
+
+.gridWrapper {
+  .grid {
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2.25rem;
+  }
+}
+
+.itemWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  
+  background: $grid-item-bkgd;
+
+  // Cuts out the bottom left corner, for style
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 77.5%);
+  // margin: 1.0rem;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 68%;  // Ratio of height to width: 100:75
+  }
+
+  .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+// ——————————————————————
+// Responsive: Desktop
+
+.flourish {
+  padding-top: 0.4rem;
+
+  svg {
+    float: right;
+    fill: $grid-item-bkgd-col1;
+  }
+}
+
+.gridWrapper {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: $breakpoint-4k) {
+  .gridWrapper .grid {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+// ——————————————————————
+// Responsive: Mobile
+
+
+@media screen and (max-width: $breakpoint-grid-2) {
+  .gridWrapper {
+    .grid {
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-grid-1) {
+  .gridWrapper {
+    .grid {
+      grid-template-columns: auto;
+    }
+  }
+
+  div.itemWrapper {
+    // margin: 1.0rem 0;
+  }
+
+  // Don't show flourish on mobile layout
+  .flourish {
+    display: none;
+  }
+}
