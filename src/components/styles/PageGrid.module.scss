@@ -35,8 +35,9 @@
 
   // Cuts out the bottom left corner, for style
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 77.5%);
-  // margin: 1.0rem;
 
+  // —————
+  // Aspect ratio
   &:before {
     content: "";
     display: block;
@@ -49,6 +50,14 @@
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  // box-shadow: 0 0 20px black;
+}
+
+div.gridItem {
+  &:focus {
+    background: yellow;
   }
 }
 

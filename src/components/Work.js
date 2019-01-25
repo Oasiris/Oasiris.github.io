@@ -3,6 +3,8 @@ import PageGrid from './PageGrid'
 import GridItem from './GridItem'
 // import gridSy from './styles/PageGrid.module.scss'
 
+import slateMidiMain from './img/slate-midi-ctrl-main.png'
+
 
 export default class Work extends Component {
 
@@ -38,7 +40,11 @@ export default class Work extends Component {
             <div className={gridSy.item} />
           </div> */}
 
-          <GridItem />
+          <GridItem 
+            img={slateMidiMain}
+            name="Arduino Midi Controller"
+            type="hardware"
+            />
           <GridItem />
           <GridItem />
           <GridItem />
