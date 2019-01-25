@@ -49,9 +49,15 @@ export default class Work extends Component {
             id="#slate">
             <p>Sample content</p>  
           </GridItem>
+
           <GridItem />
+
           <GridItem />
+
           <GridItem />
+
+          <GridItem />
+
           <GridItem />
 
         </PageGrid>

@@ -54,7 +54,7 @@ const About = () => (
     <Pbr />
     Building, modding, and hacking things is my greatest love—whether it's hardware, software, art, or music.
     <Pbr />
-    I worked for three summers at <a className="superlink" href="https://shop.hellowynd.com/" target="_blank">Wynd</a>, a Silicon Valley startup, where I wrote code to scrape 6,000+ air pollutant data points in 25+ countries around the world from open online databases.
+    I worked for three summers at <a className="superlink" href="https://shop.hellowynd.com/" target="_blank">Wynd</a>, a Silicon Valley-based startup, where I wrote code to scrape 6,000+ air pollutant data points in 25+ countries around the world from open online databases.
     <br />
     I also wrote the company's Node.js server documentation and JavaScript style guidelines galore.
     <Pbr />

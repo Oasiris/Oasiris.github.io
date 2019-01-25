@@ -25,6 +25,9 @@ const toCategoryText = category => {
 export default class GridItem extends Component {
   render() {
     // Setup
+    const {children} = this.props;
+    const hasChildren = !!(children);
+
     const imgStyle = !(this.props.img) ? null : {
       backgroundImage: `url(${this.props.img})`,
       backgroundSize: '100% 100%'
@@ -43,7 +46,9 @@ export default class GridItem extends Component {
 
 
           <div className={gridSy.item}>
-            <div className={gridSy.itemOverlay} />
+            {hasChildren && (
+              <div className={gridSy.itemOverlay} />
+            )}
             <div className={gridSy.displayTitle}>
               <span className={gridSy.itemNoHover}>
                 <h5>{subtitleUpper}</h5>
@@ -57,13 +62,21 @@ export default class GridItem extends Component {
               <h4>{nameUpper}</h4>
             </div>
 
-            <div className={gridSy.itemOnHover}>
+
+            {hasChildren && (
+              <div className={gridSy.itemOnHover}>
                 <div className={gridSy.categoryText}>
                   {categoryText}
                 </div>
               </div>
-            {/* {maybeImg} */}
-            {/* {this.props.children} */}
+            )}
+
+            {!hasChildren && (
+              <div class={gridSy.toolsIcon}>
+                <div />
+              </div>
+            )}
+            
           </div>
         </div>
 

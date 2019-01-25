@@ -68,6 +68,30 @@ div.gridItem {
 // —————————————————————————————————————————————————————————————————
 // Individual Item Styling
 // —————————————————————————————————————————————————————————————————
+// Tools icon, for contentless grid items
+
+// Reference: https://css-tricks.com/scale-svg/
+.toolsIcon {
+
+  width: 45%;
+  // display: flex;
+  margin: auto;
+  margin-top: 10%;
+
+  & > div {
+    background-image: url('../img/tools.svg');
+    background-size: cover;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    // padding-bottom: calc(68%);
+    padding-bottom: 100%;
+    // padding-right: 20%;
+  }
+}
+
+// —————
+
 
 .item { position: relative; }
 
