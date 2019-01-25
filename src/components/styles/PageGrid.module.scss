@@ -59,55 +59,123 @@
 
 div.gridItem {
   &:focus {
-    background: yellow;
+    background: $grid-item-focus-color;
+    outline: none !important;
   }
 }
 
 
-// ————————————————–
-// Individual item styling
+// —————————————————————————————————————————————————————————————————
+// Individual Item Styling
+// —————————————————————————————————————————————————————————————————
 
 .item { position: relative; }
+
+// —————
 
 // Display title
 .displayTitle {
   position: absolute;
   bottom: 0;
+  left: 0;
   right: 0;
+}
 
-  p { 
-    margin: 0; padding: 0;
-    font-size: 1.70rem;
-    font-family: $monty-font-stack; 
-    font-weight: 800;
-    color: $white;
-    letter-spacing: -0.020em;
-    padding-right: 3.0rem;
-    padding-bottom: 0.1rem;
+%itemNameDefault { 
+  margin: 0; padding: 0;
+  font-size: 1.73rem;
+  font-family: $monty-font-stack; 
+  font-weight: 800;
+  color: $white;
+  letter-spacing: -0.020em;
+  text-align: right;
+  line-height: 1.1;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 3.0rem;
+  padding-bottom: 0.5rem;
+  padding-left: 12%;
+}
+
+%itemNameHover {
+  font-size: 2.0rem;
+}
+
+%itemSubtitleDefault {
+  @extend %itemNameDefault;
+  font-weight: 700;
+  font-size: 1.60rem;
+  padding-bottom: 0.1rem;
+}
+
+// —————
+
+.gridItem .itemWrapper .itemOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+%itemOverlayNoHover {
+  bottom: 0;
+  height: 8.5rem;
+  background: linear-gradient(to top, $black-seafoam, rgba(white, 0));
+}
+
+%itemOverlayHover {
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    $black-seafoam-str, 
+    $black-seafoam 24%,
+    rgba(white, 0));
+}
+
+// ————————————————–
+// Hover only
+
+.displayIcon {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1.5rem;
+  width: 2.0rem;
+  height: 2.0rem;
+}
+
+// ————————————————————————————————
+
+// Focused or hovered
+.gridItem:focus .itemWrapper, .gridItem .itemWrapper:hover {
+  cursor: pointer; 
+  cursor: crosshair;
+
+  .itemNoHover { display: none; }
+
+  .itemOverlay { @extend %itemOverlayHover; }
+  .displayTitle h4 { @extend %itemNameHover; }
+
+  .item {
+    background: url('../img/bump-dot-pattern.png');
   }
 }
 
-// Not hover
 
-%itemOverlayNoHover {
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 7.5rem;
-    background: linear-gradient(to top, $black-seafoam, rgba(white, 0));
-}
-
-// .itemWrapper:not(:hover) {
-//   .itemOverlay {
-//     @extend %itemOverlayNoHover;
-//   }
-// }
-
+// Neither focused nor hovered
 .gridItem:not(:focus) .itemWrapper:not(:hover) {
   .itemOverlay {
     @extend %itemOverlayNoHover;
   }
+
+  .displayTitle h4 {
+    @extend %itemNameDefault;
+  }
+
+  .displayTitle h5 {
+    @extend %itemSubtitleDefault;
+  }
+
+  .itemOnHover { display: none; }
 }
 
 // —————————————————————————————————————————————————————————————————
@@ -126,14 +194,15 @@ div.gridItem {
 .gridWrapper {
   .grid {
     grid-template-columns: auto auto auto;
+    grid-column-gap: 1.12rem;
   }
 }
 
-@media screen and (min-width: $breakpoint-4k) {
-  .gridWrapper .grid {
-    grid-template-columns: auto auto auto auto;
-  }
-}
+// @media screen and (min-width: $breakpoint-grid-4k) {
+//   .gridWrapper .grid {
+//     grid-template-columns: auto auto auto auto;
+//   }
+// }
 
 // —————————————————————————————————————————————————————————————————
 // Responsive: Mobile
@@ -144,6 +213,7 @@ div.gridItem {
   .gridWrapper {
     .grid {
       grid-template-columns: auto auto;
+      grid-column-gap: 1.75rem;
     }
   }
 }

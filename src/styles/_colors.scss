@@ -22,7 +22,8 @@ $nav-bkgd: linear-gradient(to left top, rgba($seafoam, 0.9), rgba($hier-seafoam,
 
 // —————
 
-$black-seafoam: #017366;
+$black-seafoam-str: #017366;
+$black-seafoam: rgba($black-seafoam-str, 0.88);
 
 // —————
 
@@ -39,6 +40,8 @@ $grid-item-bkgd: linear-gradient(
   145deg,
   $grid-item-bkgd-col1,
   $grid-item-bkgd-col2);
+
+$grid-item-focus-color: $grid-item-bkgd-col1;
 
 // ——————————————————————————
 // Other settings

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 
 import gridSy from './styles/PageGrid.module.scss'
-import reactLogo from './img/logo.svg'
-
+import { ReactComponent as SolderIcon } from './img/solder.svg'
 
 const Flourish = () => (
   <div className={gridSy.flourish}>
@@ -15,6 +14,14 @@ const Flourish = () => (
 )
 
 
+const toCategoryText = category => {
+  category = String(category);
+  if (category.length === 0) return null;
+  return category[0].toUpperCase() + category.substring(1) + 
+  ' Project';
+}
+
+
 export default class GridItem extends Component {
   render() {
     // Setup
@@ -24,6 +31,9 @@ export default class GridItem extends Component {
     };
 
     const nameUpper = this.props.name ? this.props.name.toUpperCase() : '';
+    const subtitleUpper = 
+      this.props.subtitle ? this.props.subtitle.toUpperCase() : '';
+    const categoryText = this.props.type ? toCategoryText(this.props.type) : 'Miscellaneous Project';
 
     // —————
 
@@ -35,8 +45,23 @@ export default class GridItem extends Component {
           <div className={gridSy.item}>
             <div className={gridSy.itemOverlay} />
             <div className={gridSy.displayTitle}>
-              <p>{nameUpper}</p>
+              <span className={gridSy.itemNoHover}>
+                <h5>{subtitleUpper}</h5>
+                <div className={gridSy.displayIcon}>
+                  {this.props.type === 'hardware' &&
+                    <SolderIcon />
+                  }
+                </div>
+                
+              </span>
+              <h4>{nameUpper}</h4>
             </div>
+
+            <div className={gridSy.itemOnHover}>
+                <div className={gridSy.categoryText}>
+                  {categoryText}
+                </div>
+              </div>
             {/* {maybeImg} */}
             {/* {this.props.children} */}
           </div>

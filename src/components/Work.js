@@ -43,8 +43,12 @@ export default class Work extends Component {
           <GridItem 
             img={slateMidiMain}
             name="Arduino Midi Controller"
+            subtitle='"Slate"'
+            date="2015"
             type="hardware"
-            />
+            id="#slate">
+            <p>Sample content</p>  
+          </GridItem>
           <GridItem />
           <GridItem />
           <GridItem />
