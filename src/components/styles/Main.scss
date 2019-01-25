@@ -62,7 +62,10 @@ ul.nav {
 // Navbar – Anim
 
 ul.nav li a {
-  transition: color .03s linear, background .03s linear;
+  transition: 
+    scale 0.05s ease-in-out,
+    color .01s linear, 
+    background .03s linear;
   border-radius: 1px;
 
   &:hover {
@@ -71,11 +74,10 @@ ul.nav li a {
 
   &:focus {
     outline: none;
-    color: white;
+    // color: $white;
     // background: $black-text;
     background: 
-      linear-gradient(135deg, rgba($seafoam, 0.9), rgba($seafoam, 0.9) 70%),
-      linear-gradient(336deg, rgba($hier-seafoam, 0.9), rgba($hier-seafoam, 0.9) 70%);
+      linear-gradient(to left top, rgba($seafoam, 0.9), rgba($hier-seafoam, 0.9));
   }
 }
 
@@ -151,7 +153,10 @@ section#footer {
   ul.nav {
     li {
       display: block;
-      a { padding: 1.0rem 0; }
+      a { 
+        padding: 1.0rem 0; 
+        font-size: 1.75rem;
+      }
     }
   }
 }

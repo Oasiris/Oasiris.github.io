@@ -11,11 +11,11 @@ h3.hasHeaderLink {
 
 .jumpLink {
   // color: none;
-  font-family: $ui-font-stack;
+  font-family: $pound-font-stack;
   background: linear-gradient(to right, $seafoam, $seafoam2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 0.2rem;
+  margin-right: $pound-margin-right;
 }
 
 .hiddenLink {
@@ -26,6 +26,7 @@ h3.hasHeaderLink {
 
 @media screen and (max-width: 550px) {
   .hiddenLink {
+    top: 0rem;
     // top: -19.0rem;
     // MOBILE HEADER NO LONGER STICKY
   }

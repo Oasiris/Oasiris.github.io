@@ -3,5 +3,14 @@ $font-stack:
   "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
   "Helvetica Neue", sans-serif;
 
-$ui-font-stack: -system-ui, #{$font-stack};
+
+// NOTE: Don't do this anymore
+// https://infinnie.github.io/blog/2017/systemui.html
+// $ui-font-stack: -system-ui, #{$font-stack};
+
+
+// For drawing pound signs
+$pound-font-stack: 'Verdana', #{$font-stack};
+$pound-margin-right: 0.075rem;
+
 $rubik-font-stack: 'Rubik', #{$font-stack};

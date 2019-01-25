@@ -5,7 +5,7 @@
 // Minimum Width
 
 body {
-  min-width: 400px;
+  min-width: 320px;
 }
 
 // ————————————————————
@@ -80,7 +80,13 @@ code {
     monospace;
 }
 
+// <br> is line break -- pbr is "padded line break"
 pbr {
   display: block;
   margin-bottom: 1.8rem;
 }
+
+// // <b> is bold -- <sb> is "soft bold"
+// sb {
+//   font-weight: 500;
+// }
