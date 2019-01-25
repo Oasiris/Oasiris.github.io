@@ -1,3 +1,4 @@
+@import '../../styles/fonts';
 @import '../../styles/colors';
 @import '../../styles/values';
 
@@ -14,8 +15,9 @@
   // background: aqua;
 }
 
-// ——————————————————————
-// Responsive-agnostic
+// —————————————————————————————————————————————————————————————————
+// Responsive-agnostic: CSS Grid
+// —————————————————————————————————————————————————————————————————
 
 .gridWrapper {
   .grid {
@@ -41,7 +43,7 @@
   &:before {
     content: "";
     display: block;
-    padding-top: 68%;  // Ratio of height to width: 100:75
+    padding-top: 66%;  // Ratio of height to width: 100:75
   }
 
   .item {
@@ -61,8 +63,56 @@ div.gridItem {
   }
 }
 
-// ——————————————————————
+
+// ————————————————–
+// Individual item styling
+
+.item { position: relative; }
+
+// Display title
+.displayTitle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  p { 
+    margin: 0; padding: 0;
+    font-size: 1.70rem;
+    font-family: $monty-font-stack; 
+    font-weight: 800;
+    color: $white;
+    letter-spacing: -0.020em;
+    padding-right: 3.0rem;
+    padding-bottom: 0.1rem;
+  }
+}
+
+// Not hover
+
+%itemOverlayNoHover {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.5rem;
+    background: linear-gradient(to top, $black-seafoam, rgba(white, 0));
+}
+
+// .itemWrapper:not(:hover) {
+//   .itemOverlay {
+//     @extend %itemOverlayNoHover;
+//   }
+// }
+
+.gridItem:not(:focus) .itemWrapper:not(:hover) {
+  .itemOverlay {
+    @extend %itemOverlayNoHover;
+  }
+}
+
+// —————————————————————————————————————————————————————————————————
 // Responsive: Desktop
+// —————————————————————————————————————————————————————————————————
 
 .flourish {
   padding-top: 0.4rem;
@@ -85,8 +135,9 @@ div.gridItem {
   }
 }
 
-// ——————————————————————
+// —————————————————————————————————————————————————————————————————
 // Responsive: Mobile
+// —————————————————————————————————————————————————————————————————
 
 
 @media screen and (max-width: $breakpoint-grid-2) {

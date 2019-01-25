@@ -17,25 +17,26 @@ const Flourish = () => (
 
 export default class GridItem extends Component {
   render() {
-    const maybeImg = !(this.props.img) ? null : 
-      <img 
-        src={this.props.img} 
-        alt={this.props.name ? this.props.name : "Default text"} 
-      />
-
-    const imgStyle = !(this.props.img) ? null :
-    {
+    // Setup
+    const imgStyle = !(this.props.img) ? null : {
       backgroundImage: `url(${this.props.img})`,
       backgroundSize: '100% 100%'
     };
-    console.log('imgStyle', imgStyle)
-    
-    // const sampleStyle = {backgroundImage: `url(${reactLogo})`}
+
+    const nameUpper = this.props.name ? this.props.name.toUpperCase() : '';
+
+    // —————
 
     return (
       <div className={gridSy.gridItem} tabIndex="0">
         <div className={gridSy.itemWrapper} style={imgStyle}>
+
+
           <div className={gridSy.item}>
+            <div className={gridSy.itemOverlay} />
+            <div className={gridSy.displayTitle}>
+              <p>{nameUpper}</p>
+            </div>
             {/* {maybeImg} */}
             {/* {this.props.children} */}
           </div>
