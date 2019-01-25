@@ -131,15 +131,7 @@ section#footer {
 }
 
 // —————————————————————
-// Responsive
-
-.other {
-  transition: all .0875s ease-in-out;
-}
-
-.other:hover {
-  color: red;
-}
+// Responsive: Smaller
 
 @media screen and (max-width: $breakpoint-2) {
   ul.nav li a {
@@ -161,4 +153,28 @@ section#footer {
       }
     }
   }
+}
+
+// —————————————————————
+// Responsive: Bigger
+
+@media screen and (min-width: $breakpoint-4k) {
+  body {
+    font-size: 1.72rem !important;
+  }
+
+  section#footer h5 {
+    font-size: 1.625rem !important;
+  }
+}
+
+// —————————————————————
+// Misc.
+
+.other {
+  transition: all .0875s ease-in-out;
+}
+
+.other:hover {
+  color: red;
 }

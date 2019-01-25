@@ -25,12 +25,15 @@ $nav-bkgd: linear-gradient(to left top, rgba($seafoam, 0.9), rgba($hier-seafoam,
 
 // $grid-item-bkgd-col2: rgb(180, 255, 245);
 
-$grid-item-bkgd-col1: rgba(196, 255, 235, 0.85);
-$grid-item-bkgd-col2: rgba(198, 253, 255, 0.85);
+// $grid-item-bkgd-col1: rgba(196, 255, 235, 0.85);
+// $grid-item-bkgd-col2: rgba(198, 253, 255, 0.85);
+
+$grid-item-bkgd-col1: rgba(183, 255, 231, 0.6);
+$grid-item-bkgd-col2: rgba(162, 252, 255, 0.6);
 
 
 $grid-item-bkgd: linear-gradient(
-  135deg,
+  145deg,
   $grid-item-bkgd-col1,
   $grid-item-bkgd-col2);
 

@@ -1,6 +1,11 @@
+# Package managers
 node_modules/
+
+# Personal files
 .vscode/
-
-build/
-
+secrets/
+secrets.json
 .npmrc
+
+# Builds
+build/

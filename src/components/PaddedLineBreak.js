@@ -2,9 +2,8 @@ import React from 'react'
 
 const PaddedLineBreak = (props) => (
   <>
-    <br style={{display: 'block', marginBottom: '1.8rem'}}>
-      {props.children}
-    </br>
+    <br />
+    <span style={{display: 'block', marginBottom: '1.5rem'}} />
   </>
 )
 export default PaddedLineBreak
