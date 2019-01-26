@@ -39,10 +39,13 @@ export default class GridItem extends Component {
       this.props.subtitle ? this.props.subtitle.toUpperCase() : '';
     const categoryText = this.props.type ? toCategoryText(this.props.type) : 'Miscellaneous Project';
 
+    // If no content
+    const maybeUnselectable = hasContent ? '' : 'unselectable';  // This doesn't do anything that I've noticed ATM
+    
     // —————
 
     return (
-      <div className={`${gridSy.gridItem} growSlight`} tabIndex="0">
+      <div className={`${gridSy.gridItem} growSlight ${maybeUnselectable}`} tabIndex="0">
         <div className={gridSy.itemWrapper} style={imgStyle}>
 
 
@@ -63,10 +66,14 @@ export default class GridItem extends Component {
             </span>
 
             {hasContent && (
-              <div className={gridSy.itemOnHover}>
+              <div className={`${gridSy.itemOnHover} unselectable`}>
                 <div className={gridSy.clickToSeeMore}>Click to see more</div>
                 <h6 className={gridSy.focusYear}>{year}</h6>
-                <h4 className={gridSy.focusTitle}>{nameUpper}</h4>
+                <h4 className={gridSy.focusTitle}>
+                  {nameUpper}
+                  <h5 className={gridSy.focusSubtitle}>{subtitleUpper}</h5>
+                </h4>
+                
                 <div className={gridSy.focusCategory}>
                   {categoryText}
                 </div>

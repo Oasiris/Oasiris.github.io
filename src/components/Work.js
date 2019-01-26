@@ -4,6 +4,7 @@ import GridItem from './GridItem'
 // import gridSy from './styles/PageGrid.module.scss'
 
 import slateMidiMain from './img/slate-midi-ctrl-main.png'
+import oceanMidiMain from './img/ocean-midi-ctrl-main.png'
 
 
 export default class Work extends Component {
@@ -40,6 +41,17 @@ export default class Work extends Component {
             <div className={gridSy.item} />
           </div> */}
 
+
+          <GridItem
+            img={oceanMidiMain}
+            name="Teensy Midi Controller"
+            subtitle='"Ocean"'
+            date="2018"
+            type="hardware"
+            id="#ocean">
+            <p>Sample content</p>
+          </GridItem>
+
           <GridItem 
             img={slateMidiMain}
             name="Arduino Midi Controller"
@@ -49,8 +61,6 @@ export default class Work extends Component {
             id="#slate">
             <p>Sample content</p>  
           </GridItem>
-
-          <GridItem />
 
           <GridItem />
 

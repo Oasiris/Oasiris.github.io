@@ -208,6 +208,12 @@ div.gridItem {
     font-weight: 700;
     line-height: 0.85;
     min-height: 32.5%;
+
+    .focusSubtitle {
+      font-size: 2.5rem;
+      letter-spacing: -.020em;
+      padding: 0.4rem 0;
+    }
   }
 
   .focusCategory {
