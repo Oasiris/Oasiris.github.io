@@ -30,7 +30,7 @@
 .itemWrapper {
   position: relative;
   width: 100%;
-  max-width: 450px;
+  max-width: 425px;
   
   background: $grid-item-bkgd;
   border-radius: 2px;
@@ -141,9 +141,10 @@ div.gridItem {
   right: 0;
 }
 
-%itemOverlayNoHover {
+%itemOverlayNoHover { 
   bottom: 0;
   height: 8.5rem;
+  width: 105%;  // Just to make sure it doesn't fall short -- doesn't overflow.......
   background: linear-gradient(to top, $black-seafoam, rgba(white, 0));
 }
 
@@ -152,12 +153,11 @@ div.gridItem {
   height: 100%;
   background: linear-gradient(to bottom, 
     $black-seafoam-str, 
-    $black-seafoam 24%,
-    rgba(white, 0));
+    rgba($black-seafoam, 0.4));
 }
 
 // ————————————————–
-// Hover only
+// Icon
 
 .displayIcon {
   position: absolute;
@@ -167,12 +167,65 @@ div.gridItem {
   height: 2.0rem;
 }
 
+// ————————————————–
+// Hover/focus only
+
+.itemOnHover {
+  height: 100%;
+  position: absolute;
+
+  & * {
+    z-index: 25;
+    position: relative;
+
+    margin: 0;
+    font-family: $monty-font-stack;
+    text-align: center;
+    color: $white;
+    line-height: 1.0;
+  }
+  
+  .clickToSeeMore, .focusCategory {
+    font-family: $monty-alt-font-stack;
+    margin-top: 0.3rem;
+  }
+
+  .clickToSeeMore {
+    font-size: 1.5rem;
+    height: 15%;
+  }
+
+  .focusYear {
+    font-size: 1.5rem;
+    line-height: 1.0;
+    letter-spacing: .150em;
+    // margin-top: 1.25rem;
+  }
+
+  .focusTitle {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 0.85;
+    min-height: 32.5%;
+  }
+
+  .focusCategory {
+    font-size: 1.9rem;
+    position: relative;
+    letter-spacing: .025em;
+    padding: 0.15rem 0;
+    background: $white;
+    color: $black-seafoam;
+  }
+}
+
 // ————————————————————————————————
 
 // Focused or hovered
 .gridItem:focus .itemWrapper, .gridItem .itemWrapper:hover {
   cursor: pointer; 
-  cursor: crosshair;
+  // cursor: crosshair;
 
   .itemNoHover { display: none; }
 
@@ -180,6 +233,8 @@ div.gridItem {
   .displayTitle h4 { @extend %itemNameHover; }
 
   .item {
+    z-index: 25;
+    position: absolute;
     background: url('../img/bump-dot-pattern.png');
   }
 }

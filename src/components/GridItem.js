@@ -26,13 +26,14 @@ export default class GridItem extends Component {
   render() {
     // Setup
     const {children} = this.props;
-    const hasChildren = !!(children);
+    const hasContent = !!(children);
 
     const imgStyle = !(this.props.img) ? null : {
       backgroundImage: `url(${this.props.img})`,
       backgroundSize: '100% 100%'
     };
 
+    const year = this.props.date ? this.props.date : '';
     const nameUpper = this.props.name ? this.props.name.toUpperCase() : '';
     const subtitleUpper = 
       this.props.subtitle ? this.props.subtitle.toUpperCase() : '';
@@ -41,37 +42,38 @@ export default class GridItem extends Component {
     // —————
 
     return (
-      <div className={gridSy.gridItem} tabIndex="0">
+      <div className={`${gridSy.gridItem} growSlight`} tabIndex="0">
         <div className={gridSy.itemWrapper} style={imgStyle}>
 
 
           <div className={gridSy.item}>
-            {hasChildren && (
+            {hasContent && (
               <div className={gridSy.itemOverlay} />
             )}
-            <div className={gridSy.displayTitle}>
-              <span className={gridSy.itemNoHover}>
+            <span className={gridSy.itemNoHover}>
+              <div className={gridSy.displayTitle}>
                 <h5>{subtitleUpper}</h5>
                 <div className={gridSy.displayIcon}>
                   {this.props.type === 'hardware' &&
                     <SolderIcon />
                   }
                 </div>
-                
-              </span>
-              <h4>{nameUpper}</h4>
-            </div>
+                <h4>{nameUpper}</h4>
+              </div>
+            </span>
 
-
-            {hasChildren && (
+            {hasContent && (
               <div className={gridSy.itemOnHover}>
-                <div className={gridSy.categoryText}>
+                <div className={gridSy.clickToSeeMore}>Click to see more</div>
+                <h6 className={gridSy.focusYear}>{year}</h6>
+                <h4 className={gridSy.focusTitle}>{nameUpper}</h4>
+                <div className={gridSy.focusCategory}>
                   {categoryText}
                 </div>
               </div>
             )}
 
-            {!hasChildren && (
+            {!hasContent && (
               <div class={gridSy.toolsIcon}>
                 <div />
               </div>
