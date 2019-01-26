@@ -13,12 +13,16 @@ a.superlink {
 
 .grow { transition: all .095s ease-in-out; }
 .grow:hover { transform: scale(1.06); }
+.grow:active { &:hover { transform: scale(1.0); transition: all 0; }}
 
 .growSlight { transition: all .09s ease-in-out; }
 .growSlight:hover { transform: scale(1.025); }
+.growSlight:active { &:hover { transform: scale(1.0); transition: all 0; }}
 
 .growSlighter { transition: all .08s ease-in-out; }
 .growSlighter:hover { transform: scale(1.01); }
+.growSlighter:active { &:hover { transform: scale(1.0); transition: all 0; }}
 
 .growSlightest { transition: all .1s ease-in-out; }
 .growSlightest:hover { transform: scale(1.006); }
+.growSlightest:active { &:hover { transform: scale(1.0); transition: all 0; }}
