@@ -30,7 +30,7 @@ export default class GridItem extends Component {
 
     const imgStyle = !(this.props.img) ? null : {
       backgroundImage: `url(${this.props.img})`,
-      backgroundSize: '100% 100%'
+      backgroundSize: 'cover'
     };
 
     const year = this.props.date ? this.props.date : '';

@@ -5,6 +5,8 @@ import GridItem from './GridItem'
 
 import slateMidiMain from './img/slate-midi-ctrl-main.png'
 import oceanMidiMain from './img/ocean-midi-ctrl-main.png'
+import mapCollectiveMain from './img/map-collective-ss-jan19-main.jpg'
+import paintedPianoMain from './img/painted-piano-coldplay-main.jpg'
 
 
 export default class Work extends Component {
@@ -41,6 +43,20 @@ export default class Work extends Component {
             <div className={gridSy.item} />
           </div> */}
 
+          <GridItem
+            img={mapCollectiveMain}
+            name="Map-Collective"
+            subtitle="Social 3D Web App"
+            date="2019"
+            type="web"
+            id="#mapper"
+            >
+            <p>Sample content</p>
+          </GridItem>
+
+          <GridItem />
+
+          <GridItem />
 
           <GridItem
             img={oceanMidiMain}
@@ -62,13 +78,18 @@ export default class Work extends Component {
             <p>Sample content</p>  
           </GridItem>
 
-          <GridItem />
+          
 
-          <GridItem />
-
-          <GridItem />
-
-          <GridItem />
+          <GridItem
+            img={paintedPianoMain}
+            name="Painted Piano"
+            subtitle="Coldplay-inspired"
+            date="2014"
+            type="Art"
+            id="#coldplay-piano"
+            >
+            <p>Sample content</p>
+          </GridItem>
 
         </PageGrid>
 
