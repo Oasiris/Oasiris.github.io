@@ -4,8 +4,8 @@
 // Fonts
 $font-stack-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$font-stack: Nunito, #{$font-stack-base};
-// $font-stack: 'Inter', #{$font-stack-base};
-// $font-stack-var: 'Inter var', 'Inter', #{$font-stack-base};
+// $font-stack: Nunito, #{$font-stack-base};
+$font-stack: 'Inter', #{$font-stack-base};
+$font-stack-var: 'Inter var', 'Inter', #{$font-stack-base};
 
 // $font-stack: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

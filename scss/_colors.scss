@@ -1,22 +1,30 @@
 $text-color: #184E3E;
-$text-color: rgb(33, 58, 51);
+$text-color: rgb(31, 43, 39);
 
 // $mint-lightest: #DFFFF5;
 $mint-lightest: #DEFCEE;
-$mint-lightest: rgb(235, 255, 250);
+$mint-lightest: rgb(241, 255, 251);
+$mint-lightest: rgb(242, 253, 250);
 
 $mint-lightestest: #EBFFF6;
 $mint-lightestest: rgb(224, 255, 245);
+$mint-lightestest: rgb(233, 251, 245);;
 
 $seagreen-bright: #71FFD4;
 
+ 
 
+// Colors: Tags [OLD]
+// $developer-color: #A48411;
+// $musician-color: #08A3CB;
+// $artist-color: #4DD1A9;
+// $wynd-color: #4BC7C9;
 
-// Colors: Tags
-$developer-color: #A48411;
-$musician-color: #08A3CB;
-$artist-color: #4DD1A9;
-$wynd-color: #4BC7C9;
+// Colors: Tags [NEW]
+$developer-color: rgb(0, 170, 119);
+$musician-color: rgb(55, 0, 221);
+$artist-color: rgb(188, 132, 0);
+$wynd-color: rgb(0, 180, 204);
 
 // Selection/text highlight
 // $selection-color: $seagreen-bright;
@@ -28,8 +36,12 @@ $resume-link-color: #32876D;
 $text-pop-color: $seagreen-bright;
 
 // Colors: color palette
-$circ-1-color: #DFD885;
-$circ-2-color: #DCB93B;
-$circ-3-color: #4DD1A9;
-$circ-4-color: #184E3E;
-$circ-5-color: #1E150C;
+// old: #DFD885;
+// old: $circ-1-color: rgb(244, 231, 88);
+$circ-1-color: rgb(241, 220, 37);
+$circ-2-color: rgb(221, 184, 53);
+// old $circ-3-color: #4DD1A9;
+$circ-3-color: rgb(16, 197, 143);
+$circ-4-color: rgb(17, 96, 72);
+$circ-5-color: rgb(47, 28, 10);
+

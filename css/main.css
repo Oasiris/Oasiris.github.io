@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800");
+hr {
+  border-top: 1px solid #b3c9c2; }
+
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
@@ -7,9 +10,9 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.375;
   font-weight: 400;
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  color: #213a33;
-  background: #e0fff5;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  color: #1f2b27;
+  background: #e9fbf5;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 body {
@@ -51,13 +54,14 @@ a:hover {
 
 .pg-space {
   width: 100%;
-  height: 7.5px; }
+  height: 7.5px;
+  height: 11px; }
 
 .color-palette {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 17.5px; }
+  margin-bottom: 20px; }
 
 .circ-1, .circ-2, .circ-3, .circ-4, .circ-5 {
   display: inline-block;
@@ -69,19 +73,19 @@ a:hover {
   border-radius: 50%; }
 
 .circ-1 {
-  background: #DFD885; }
+  background: #f1dc25; }
 
 .circ-2 {
-  background: #DCB93B; }
+  background: #ddb835; }
 
 .circ-3 {
-  background: #4DD1A9; }
+  background: #10c58f; }
 
 .circ-4 {
-  background: #184E3E; }
+  background: #116048; }
 
 .circ-5 {
-  background: #1E150C; }
+  background: #2f1c0a; }
 
 #topbar {
   content: "";
@@ -110,14 +114,13 @@ header {
   align-items: center; }
 
 header {
-  padding-top: 5.0rem;
-  padding-bottom: 5.0rem;
-  background: #ebfffa;
+  padding: 5.0rem 2.0rem;
+  background: #f2fdfa;
   cursor: crosshair; }
 
 div.info {
   font-weight: 400;
-  padding-right: 5px; }
+  padding-right: 17.5px; }
 
 h1#name {
   font-size: 52px;
@@ -141,7 +144,7 @@ h1#name {
   max-width: 320px;
   border-radius: 50%;
   border: 6px solid #71FFD4;
-  box-sizing: content-box; }
+  box-sizing: border-box; }
   #profile-pic img {
     border-radius: 50%;
     width: 100%;
@@ -194,6 +197,48 @@ h1#name {
   display: flex;
   justify-content: center; }
 
+body, html {
+  transform: scale(1, 0.993);
+  letter-spacing: -0.005em; }
+
+h1#name {
+  font-weight: 740;
+  letter-spacing: -0.04em;
+  font-size: 75px;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  font-family: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
+
+.intro-line {
+  line-height: 1;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.030em;
+  margin-bottom: 0.6rem; }
+
+div.info {
+  font-size: 16.7px;
+  letter-spacing: -0.011em;
+  line-height: 1.45; }
+
+div.stats {
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.02em; }
+
+div#contact-bar {
+  margin-top: 1.0rem; }
+  div#contact-bar div {
+    font-weight: 600;
+    letter-spacing: -0.03em; }
+  div#contact-bar div.resume-btn {
+    font-style: normal;
+    color: inherit; }
+  div#contact-bar div.email-txt {
+    font-weight: 300;
+    transform: scale(1.05, 1); }
+
 #contact-bar {
   display: flex;
   justify-content: center;
@@ -232,19 +277,21 @@ h1#name {
       padding-bottom: 15px;
       text-align: center; }
     #contact-bar div.diamond {
-      display: none; } }
+      display: none; }
+  h1#name {
+    font-size: 14vw; } }
 
 .developer-color, .wynd-color, .musician-color, .artist-color {
-  font-weight: 800; }
+  font-weight: 600; }
 
 .developer-color {
-  color: #A48411; }
+  color: #00aa77; }
 
 .wynd-color {
-  color: #4BC7C9; }
+  color: #00b4cc; }
 
 .musician-color {
-  color: #08A3CB; }
+  color: #3700dd; }
 
 .artist-color {
-  color: #4DD1A9; }
+  color: #bc8400; }
