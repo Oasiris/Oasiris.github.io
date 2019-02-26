@@ -208,8 +208,17 @@ header {
   padding: 5.0rem 2.0rem;
   // padding-top: 5.0rem;
   // padding-bottom: 5.0rem;
-  background: $mint-lightest;
+  // background: $mint-lightest;
   cursor: crosshair;
+}
+
+#root {
+  background: $mint-lightest;
+}
+
+header { 
+  background-image: radial-gradient(circle, $dot-color, $dot-color 1px, $mint-lightest 1px, $mint-lightest);
+  background-size: 28px 28px;
 }
 
 div.info {
@@ -326,7 +335,7 @@ body, html {
   letter-spacing: -0.005em;
 }
 h1#name {
-  font-weight: 740;
+  font-weight: 800;
   letter-spacing: -0.04em;
   font-size: 75px;
   line-height: 1;

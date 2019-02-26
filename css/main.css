@@ -111,8 +111,14 @@ header {
 
 header {
   padding: 5.0rem 2.0rem;
-  background: #f2fdfa;
   cursor: crosshair; }
+
+#root {
+  background: #f2fdfa; }
+
+header {
+  background-image: radial-gradient(circle, #bceadc, #bceadc 1px, #f2fdfa 1px, #f2fdfa);
+  background-size: 28px 28px; }
 
 div.info {
   font-weight: 400;
@@ -198,7 +204,7 @@ body, html {
   letter-spacing: -0.005em; }
 
 h1#name {
-  font-weight: 740;
+  font-weight: 800;
   letter-spacing: -0.04em;
   font-size: 75px;
   line-height: 1;
