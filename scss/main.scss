@@ -213,11 +213,11 @@ header {
 }
 
 #root {
-  background: $mint-lightest;
+  background: $root-bg;
 }
 
 header { 
-  background-image: radial-gradient(circle, $dot-color, $dot-color 1px, $mint-lightest 1px, $mint-lightest);
+  background-image: radial-gradient(circle, $dot-color, $dot-color 1px, $header-bg 1px, $header-bg);
   background-size: 28px 28px;
 }
 

@@ -114,10 +114,10 @@ header {
   cursor: crosshair; }
 
 #root {
-  background: #f2fdfa; }
+  background: #e9fbf5; }
 
 header {
-  background-image: radial-gradient(circle, #bceadc, #bceadc 1px, #f2fdfa 1px, #f2fdfa);
+  background-image: radial-gradient(circle, #c2e8dd, #c2e8dd 1px, #f2fdfa 1px, #f2fdfa);
   background-size: 28px 28px; }
 
 div.info {
