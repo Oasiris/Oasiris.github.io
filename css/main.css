@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700,800");
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
@@ -6,10 +7,9 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.375;
   font-weight: 400;
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #184E3E;
-  background: #EBFFF6;
-  min-height: 80vh;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  color: #213a33;
+  background: #e0fff5;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 body {
@@ -94,15 +94,25 @@ a:hover {
   background: url(../img/slicebar.svg) repeat-x;
   background-size: auto 500%; }
 
+body, html {
+  min-height: 100vh;
+  width: 100vw; }
+
+#root {
+  min-height: calc(100vh - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 header {
-  min-height: 80vh;
+  width: 100%;
   display: flex;
   align-items: center; }
 
 header {
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
-  background: #DEFCEE;
+  padding-top: 5.0rem;
+  padding-bottom: 5.0rem;
+  background: #ebfffa;
   cursor: crosshair; }
 
 div.info {

@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.11.0"
   },
   "bugs": {
     "url": "https://github.com/Oasiris/Oasiris.github.io/issues"
