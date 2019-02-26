@@ -2,15 +2,15 @@
 import React from 'react';
 // import * as loremIpsum from 'fast-lorem-ipsum'
 // import logo from './img/logo.svg';
-import './styles/Home.scss';
+import '../styles/Home.scss';
 
 import ContentHeader from './ContentHeader'
 import Work from './Work'
 import Contact from './Contact'
-import Sb from './general/Semibold';
+import Sb from '../general/Semibold';
 // import Pbr from './PaddedLineBreak'
 
-import About from './Home/About'
+import About from '../Home/About'
 
 
 const Nav = () => (

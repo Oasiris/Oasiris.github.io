@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import gridSy from './styles/PageGrid.module.scss'
-import { ReactComponent as SolderIcon } from './img/solder.svg'
+import gridSy from '../styles/PageGrid.module.scss'
+import { ReactComponent as SolderIcon } from '../img/solder.svg'
 
 /** The squares in the bottom right corner, for aesthetic flourish. */
 const Flourish = () => (

@@ -3,10 +3,10 @@ import PageGrid from './PageGrid'
 import GridItem from './GridItem'
 // import gridSy from './styles/PageGrid.module.scss'
 
-import slateMidiMain from './img/slate-midi-ctrl-main.png'
-import oceanMidiMain from './img/ocean-midi-ctrl-main.png'
-import mapCollectiveMain from './img/map-collective-ss-jan19-main.jpg'
-import paintedPianoMain from './img/painted-piano-coldplay-main.jpg'
+import slateMidiMain from '../img/slate-midi-ctrl-main.png'
+import oceanMidiMain from '../img/ocean-midi-ctrl-main.png'
+import mapCollectiveMain from '../img/map-collective-ss-jan19-main.jpg'
+import paintedPianoMain from '../img/painted-piano-coldplay-main.jpg'
 
 
 export default class Work extends Component {

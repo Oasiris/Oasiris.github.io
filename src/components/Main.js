@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Home from './Home'
+import Home from './Home/Home'
 
 const Cool = () => <h1>Hello world!</h1>
 

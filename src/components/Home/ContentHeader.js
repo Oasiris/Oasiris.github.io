@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './styles/Header.scss'
+import '../styles/Header.scss'
 
 // export default class ContentHeader extends Component {
 //   render() {

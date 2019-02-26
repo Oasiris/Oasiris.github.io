@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from './styles/PageGrid.module.scss'
+import style from '../styles/PageGrid.module.scss'
 
 export default class PageGrid extends Component {
   render() {
