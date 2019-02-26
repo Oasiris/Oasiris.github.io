@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import gridSy from './styles/PageGrid.module.scss'
 import { ReactComponent as SolderIcon } from './img/solder.svg'
 
+/** The squares in the bottom right corner, for aesthetic flourish. */
 const Flourish = () => (
   <div className={gridSy.flourish}>
     <svg width="2.2rem" height="1.0rem">
@@ -20,6 +21,8 @@ const toCategoryText = category => {
   return category[0].toUpperCase() + category.substring(1) + 
   ' Project';
 }
+
+const Placeholder = () => (<div className={gridSy.toolsIcon}><div /></div>);
 
 
 export default class GridItem extends Component {
@@ -71,7 +74,8 @@ export default class GridItem extends Component {
                 <h6 className={gridSy.focusYear}>{year}</h6>
                 <h4 className={gridSy.focusTitle}>
                   {nameUpper}
-                  <h5 className={gridSy.focusSubtitle}>{subtitleUpper}</h5>
+                  <br />
+                  <span className={gridSy.focusSubtitle}>{subtitleUpper}</span>
                 </h4>
                 
                 <div className={gridSy.focusCategory}>
@@ -80,11 +84,7 @@ export default class GridItem extends Component {
               </div>
             )}
 
-            {!hasContent && (
-              <div class={gridSy.toolsIcon}>
-                <div />
-              </div>
-            )}
+            {!hasContent && <Placeholder />}
             
           </div>
         </div>
