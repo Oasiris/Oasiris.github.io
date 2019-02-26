@@ -43,26 +43,37 @@ body {
 }
 
 // Improve link styling.
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:visited {
-  color: inherit;  
-}
-
-a:hover {
-  text-decoration: underline;
+a, a:hover, a:visited {
+  all: unset; 
+  text-decoration: none; 
   cursor: pointer;
-  // color: $mint-lightest;
-  // background-color: $text-color;
 }
+
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// a:visited {
+//   color: inherit;  
+// }
+
+// a:hover {
+//   text-decoration: underline;
+//   cursor: pointer;
+//   // color: $mint-lightest;
+//   // background-color: $text-color;
+// }
 
 // Selection/text highlight
 
 ::selection {
   background: $mild-selection-color; /* WebKit/Blink Browsers */
+}
+
+*:focus {
+  // background: red;
+  outline: default;
 }
 
 
@@ -378,7 +389,6 @@ div#contact-bar {
     a {
       // font-size: 10px;
       display: block;
-      height: 20px;
       padding: 2px 22.5px;
       position: relative;    
       z-index: 10;   
