@@ -1,0 +1,346 @@
+@import 'colors';
+
+// Sections
+
+article.section {
+  padding: 60px 0;
+  border-bottom: 1px solid $hr-color;
+}
+
+article.lean-section {
+  padding: 35px 0;
+}
+
+// Hook section
+
+#hook-section {
+  // display: flex;
+  // align-items: center;
+  padding: 0.9rem 0;
+  position: relative;
+}
+
+#blurb {
+  p { text-align: center; }
+  p[data-key="0"] {
+    font-weight: 400;
+    font-size: 1.17rem;
+    letter-spacing: -0.018em;
+  }
+}
+
+@media(min-width: 768px) {
+  #hook-section {
+    display: flex;
+    align-items: center;
+  }
+  .resume-btn-wrapper {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  p { text-align: left; }
+  #blurb p[data-key="0"] {
+    font-size: 1.35rem;
+    letter-spacing: -0.021em;
+  }
+}
+@media (min-width: 1200px) {
+  #blurb p[data-key="0"] {
+    font-size: 1.45rem;
+    letter-spacing: -0.023em;
+  }
+}
+
+.resume-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.resume-btn {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: $handsome-seafoam;
+  background: $background-color;
+  border: 1px solid $handsome-seafoam;
+  border-radius: 4.5px;
+  padding: 4px 17px;
+  transition: 0.1s color, 0.1s background;
+
+  &:hover:not(:active) {
+    color: $background-color;
+    background: $handsome-seafoam;
+  }
+}
+
+@media (max-width: 767px) {
+  button.resume-btn {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+// Work & Project Sections
+
+#work-list, #projects-list {
+  position: relative;
+  margin: 0 0 10px 0;
+  padding-left: 20px;
+  list-style: none;
+  & > li::before {
+    content: "▸";
+    position: absolute;
+    left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .list-section-title-md {
+    text-align: right;
+    padding-right: 25px;
+  }
+}
+
+.experience-list-header {
+  font-weight: 600;
+  font-size: 1.03rem;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+
+
+
+// === Work ===
+
+.work-item {
+  margin-bottom: 1.8rem;
+}
+
+.work-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > div { display: inline-block; }
+}
+
+.work-date-to {
+  margin: 0 10px;
+}
+
+.work-blurb, .project-blurb {
+  font-size: 0.84rem;
+  letter-spacing: -0.002em;
+  color: $subtext-color;
+}
+
+.work-blurb {
+  margin-top: 0.35rem;
+}
+
+// === Projects ===
+
+.project-item {
+  margin-bottom: 1.8rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .project-facts {
+    padding-left: 1.0rem;
+    .project-fact-type {
+      // width: 90px;
+    }
+  }
+  margin-bottom: 0.3rem;
+}
+
+.project-wip-sticky-grandparent {
+  display: inline-block;
+  &:nth-child(0) {
+    // display: flex;
+    // flex-direction: column;
+    position: absolute;
+  }
+}
+
+.project-wip-sticky {
+  &::before {
+    content: "WIP";
+  }
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 6px;
+  transform: translate(0, -0.39rem);
+  color: $wip-color;
+  border: 1px solid $wip-color;
+  padding: 1px 3px;
+  border-radius: 1px;
+  line-height: 1.2;
+  letter-spacing: 0.060em;
+
+  transition: color 0.05s, background 0.05s;
+  &:hover { 
+    color: $handsome-seafoam; 
+    border-color: $handsome-seafoam; 
+    box-shadow: 0 0 4px rgba($seafoam, 0.3);
+  }
+}
+
+.fact-tag {
+  color: lighten($text-color, 13%);
+  font-weight: 500;
+  font-size: 0.7rem;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 3px 10px;
+  margin-left: 10px;
+  border-radius:5px;
+  border: 1px solid #e2e2e2;
+
+  // Interactivity
+
+  cursor: default;
+  &:hover { 
+    color: $handsome-seafoam; 
+    border-color: $handsome-seafoam; 
+    box-shadow: 0 0 4px rgba($seafoam, 0.3);
+  }
+}
+
+
+// Horizontal list of tools/technologies utilized.
+ul.project-tools {
+  display: flex;
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+
+  li {
+    font-size: 0.79rem;
+    line-height: 1.3;
+    margin: 0 10px 0 0;
+    // padding: 4px 8px;
+    // border: 1px solid green;
+    // border-radius: 3px;
+    padding: 3px 5px;
+    border-bottom: 1px solid $mint-handsome;
+  }
+
+  // === Interactivity ===
+  li { cursor: default; }
+  li:hover { background: $mint-lighter; border-bottom-color: $mint-standard; }
+}
+
+
+// === Footer ===
+
+#footer {
+  padding: 28.5px 0;
+  color: $subtext-color;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: -0.001em;
+  .row > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+// === Info Bubbles ===
+
+// .project-wip-sticky {
+//   display: absolute;
+// }
+
+// .info-bubble {
+// 	position: relative;
+// 	background: #00aabb;
+//   border-radius: 0.2rem;
+//   padding: 3px 8px;
+//   bottom: 20px;
+  
+//   opacity: 0.2;
+// }
+
+// .info-bubble:after {
+// 	content: '';
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 16px;
+// 	width: 0;
+// 	height: 0;
+// 	border: 8px solid transparent;
+// 	border-top-color: #00aabb;
+// 	border-bottom: 0;
+// 	border-left: 0;
+// 	margin-left: -4px;
+// 	margin-bottom: -8px;
+// }
+
+// .info-bubble-before, .info-bubble-after {
+//   display: inline-block;
+// }
+
+// .info-bubble-parent:hover .info-bubble {
+//   opacity: 0.9;
+// }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  .tooltip-text {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: -0.007rem;
+    min-width: 130px;
+    background-color: $tooltip-color;
+    color: $background-color;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+
+    opacity: 0;
+    transition: opacity calc(1s / 24);
+    // visibility: hidden;
+    
+    /* Position the tooltip */
+    position: absolute;
+    // width: 120px;
+
+    top: 0;
+    left: calc(100%); /* To the right of the tooltip */
+    transform: translate(12px, 0);  // Make room for the bubble tail
+    // margin-top: -5px;
+    // border-width: 5px;
+
+    // Bubble tail
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 0;
+      height: 0;
+      border: 12px solid transparent;
+      border-right-color: $tooltip-color;
+      border-left: 0;
+      border-bottom: 0;
+      margin-top: -6px;
+      margin-left: -12px;
+      border-radius: 0;
+    }
+  }
+
+  &:hover {
+    .tooltip-text {
+      // visibility: visible;
+      opacity: 1;
+    }
+  }
+}
