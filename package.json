@@ -29,9 +29,6 @@
     "typography-theme-irving": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
   },
-  "devDependencies": {
-    "prettier": "^1.17.1"
-  },
   "keywords": [
     "gatsby"
   ],
