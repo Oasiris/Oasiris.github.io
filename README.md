@@ -4,6 +4,8 @@
 
 This is v3 of my personal website, hosted on [Oasiris.github.io](https://oasiris.github.io/). It was created in TypeScript and Preact.
 
+> ## See https://github.com/Oasiris/v3.
+
 ## Getting Started
 
 -   `npm install`: Installs dependencies
