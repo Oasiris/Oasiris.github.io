@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://./routes/notfound/style.scss"],"names":[],"mappings":"AAAA,iBAEI,cAAA,CADA,YACA","file":"route-notfound.chunk.daf49.css","sourcesContent":[".notfound {\n    padding: 0 5%;\n    margin: 100px 0;\n}\n"]}
