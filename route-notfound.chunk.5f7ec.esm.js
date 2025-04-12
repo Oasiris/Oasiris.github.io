@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{h8s1:function(e,t,h){"use strict";h.r(t);var n=h("hosL");t.default=()=>Object(n.h)("div",{class:"notfound"},Object(n.h)("h1",null,"Error 404"),Object(n.h)("p",null,"That page doesn't exist."),Object(n.h)("a",{href:"/"},Object(n.h)("h4",null,"Back to Home")))}}]);
+//# sourceMappingURL=route-notfound.chunk.5f7ec.esm.js.map
